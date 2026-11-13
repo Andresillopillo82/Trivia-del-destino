@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "loco-n1",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuánto es 7 × 8?",
+    "opciones": [
+      "58",
+      "64",
+      "54",
+      "56"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "7 × 8 = 56."
+  },
+  {
+    "id": "loco-n2",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el valor aproximado de π con dos decimales?",
+    "opciones": [
+      "3,14",
+      "3,41",
+      "3,16",
+      "3,12"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "π ≈ 3,14159…, que redondeado a dos decimales es 3,14."
+  },
+  {
+    "id": "loco-n3",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos lados tiene un hexágono?",
+    "opciones": [
+      "6",
+      "5",
+      "7",
+      "8"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Hexa significa seis en griego."
+  },
+  {
+    "id": "loco-n4",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es la raíz cuadrada de 144?",
+    "opciones": [
+      "14",
+      "11",
+      "12",
+      "10"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "12 × 12 = 144."
+  },
+  {
+    "id": "loco-n5",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuál de estos números es primo?",
+    "opciones": [
+      "27",
+      "33",
+      "21",
+      "29"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "29 solo es divisible entre 1 y entre sí mismo; los otros son múltiplos de 3."
+  },
+  {
+    "id": "loco-n6",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos grados suman los ángulos interiores de un triángulo?",
+    "opciones": [
+      "270°",
+      "90°",
+      "180°",
+      "360°"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En cualquier triángulo plano, los tres ángulos suman 180°."
+  },
+  {
+    "id": "loco-n7",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuánto es el 25 % de 200?",
+    "opciones": [
+      "75",
+      "25",
+      "50",
+      "40"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "200 ÷ 4 = 50."
+  },
+  {
+    "id": "loco-n8",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el resultado de 2 elevado a la 5?",
+    "opciones": [
+      "32",
+      "25",
+      "10",
+      "16"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "2 × 2 × 2 × 2 × 2 = 32."
+  },
+  {
+    "id": "loco-h1",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es la suma de los números enteros del 1 al 100?",
+    "opciones": [
+      "4950",
+      "5050",
+      "5000",
+      "5100"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se calcula con n(n+1)/2 = 100 × 101 / 2 = 5050 (la anécdota famosa de Gauss)."
+  },
+  {
+    "id": "loco-h2",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el valor de 0! (cero factorial)?",
+    "opciones": [
+      "-1",
+      "0",
+      "1",
+      "Indefinido"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Por definición 0! = 1, lo que hace consistentes las fórmulas de combinatoria."
+  },
+  {
+    "id": "loco-h3",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "hard",
+    "pregunta": "¿Cuántos números primos hay entre 1 y 20?",
+    "opciones": [
+      "10",
+      "8",
+      "7",
+      "9"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Son 2, 3, 5, 7, 11, 13, 17 y 19."
+  },
+  {
+    "id": "mago-n1",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el símbolo químico del oro?",
+    "opciones": [
+      "Go",
+      "Ag",
+      "Au",
+      "Or"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Au viene del latín aurum. Ag es la plata."
+  },
+  {
+    "id": "mago-n2",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el planeta más grande del sistema solar?",
+    "opciones": [
+      "Júpiter",
+      "Urano",
+      "Saturno",
+      "Neptuno"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Júpiter es un gigante gaseoso con más masa que todos los demás planetas juntos."
+  },
+  {
+    "id": "mago-n3",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es la fórmula química del agua?",
+    "opciones": [
+      "HO2",
+      "O2",
+      "CO2",
+      "H2O"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Dos átomos de hidrógeno y uno de oxígeno."
+  },
+  {
+    "id": "mago-n4",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Qué gas absorben las plantas durante la fotosíntesis?",
+    "opciones": [
+      "Hidrógeno",
+      "Nitrógeno",
+      "Oxígeno",
+      "Dióxido de carbono"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Usan CO2, agua y luz para producir glucosa y liberar oxígeno."
+  },
+  {
+    "id": "mago-n5",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Qué significan las siglas CPU?",
+    "opciones": [
+      "Unidad Central de Procesamiento",
+      "Unidad de Control Programable",
+      "Centro de Procesos Universal",
+      "Unidad Computacional Personal"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Es el \"cerebro\" que ejecuta las instrucciones de un computador."
+  },
+  {
+    "id": "mago-n6",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Quién formuló la teoría de la relatividad?",
+    "opciones": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Galileo Galilei",
+      "Nikola Tesla"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Einstein publicó la relatividad especial en 1905 y la general en 1915."
+  },
+  {
+    "id": "mago-n7",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos huesos tiene el cuerpo humano adulto?",
+    "opciones": [
+      "212",
+      "250",
+      "198",
+      "206"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los bebés nacen con más, pero algunos se fusionan hasta llegar a 206."
+  },
+  {
+    "id": "mago-n8",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el elemento más abundante del universo?",
+    "opciones": [
+      "Carbono",
+      "Helio",
+      "Hidrógeno",
+      "Oxígeno"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El hidrógeno representa aproximadamente tres cuartas partes de la materia ordinaria."
+  },
+  {
+    "id": "mago-h1",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es la velocidad aproximada de la luz en el vacío?",
+    "opciones": [
+      "30.000 km/s",
+      "300.000 km/s",
+      "150.000 km/s",
+      "3.000.000 km/s"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Son unos 299.792 km/s."
+  },
+  {
+    "id": "mago-h2",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "hard",
+    "pregunta": "¿Qué científica ganó premios Nobel en dos disciplinas distintas, Física y Química?",
+    "opciones": [
+      "Rosalind Franklin",
+      "Lise Meitner",
+      "Marie Curie",
+      "Ada Lovelace"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Ganó el Nobel de Física en 1903 y el de Química en 1911."
+  },
+  {
+    "id": "mago-h3",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el número atómico del carbono?",
+    "opciones": [
+      "6",
+      "4",
+      "8",
+      "12"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El carbono tiene 6 protones. El 12 es su masa atómica aproximada."
+  },
+  {
+    "id": "sacerdotisa-n1",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"Don Quijote de la Mancha\"?",
+    "opciones": [
+      "Miguel de Cervantes",
+      "Lope de Vega",
+      "Pedro Calderón de la Barca",
+      "Francisco de Quevedo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La primera parte se publicó en 1605."
+  },
+  {
+    "id": "sacerdotisa-n2",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"Cien años de soledad\"?",
+    "opciones": [
+      "Gabriel García Márquez",
+      "Mario Vargas Llosa",
+      "Jorge Luis Borges",
+      "Julio Cortázar"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Publicada en 1967, transcurre en el pueblo ficticio de Macondo."
+  },
+  {
+    "id": "sacerdotisa-n3",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién es el autor de \"Romeo y Julieta\"?",
+    "opciones": [
+      "Oscar Wilde",
+      "William Shakespeare",
+      "Charles Dickens",
+      "Lord Byron"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La tragedia fue escrita hacia 1595."
+  },
+  {
+    "id": "sacerdotisa-n4",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"El Principito\"?",
+    "opciones": [
+      "Albert Camus",
+      "Antoine de Saint-Exupéry",
+      "Julio Verne",
+      "Victor Hugo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se publicó en 1943 y es uno de los libros más traducidos del mundo."
+  },
+  {
+    "id": "sacerdotisa-n5",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Qué autor creó al detective Sherlock Holmes?",
+    "opciones": [
+      "Edgar Allan Poe",
+      "Agatha Christie",
+      "Stephen King",
+      "Arthur Conan Doyle"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Apareció por primera vez en 1887."
+  },
+  {
+    "id": "sacerdotisa-n6",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿En qué novela aparece el capitán Ahab persiguiendo a una ballena blanca?",
+    "opciones": [
+      "Veinte mil leguas de viaje submarino",
+      "Moby Dick",
+      "El viejo y el mar",
+      "La isla del tesoro"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es la novela de Herman Melville publicada en 1851."
+  },
+  {
+    "id": "sacerdotisa-n7",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"Rayuela\"?",
+    "opciones": [
+      "Julio Cortázar",
+      "Octavio Paz",
+      "Juan Rulfo",
+      "Carlos Fuentes"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Publicada en 1963, se puede leer en más de un orden."
+  },
+  {
+    "id": "sacerdotisa-n8",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el protagonista de \"El hobbit\"?",
+    "opciones": [
+      "Bilbo Bolsón",
+      "Frodo Bolsón",
+      "Samsagaz Gamyi",
+      "Peregrin Tuk"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Frodo es el protagonista de \"El Señor de los Anillos\"."
+  },
+  {
+    "id": "sacerdotisa-h1",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "hard",
+    "pregunta": "¿Quién escribió \"La metamorfosis\"?",
+    "opciones": [
+      "Thomas Mann",
+      "Franz Kafka",
+      "Hermann Hesse",
+      "Fiódor Dostoievski"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En ella Gregorio Samsa despierta convertido en un insecto."
+  },
+  {
+    "id": "sacerdotisa-h2",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "hard",
+    "pregunta": "¿Qué escritor argentino escribió el cuento \"El Aleph\"?",
+    "opciones": [
+      "Jorge Luis Borges",
+      "Roberto Arlt",
+      "Ernesto Sabato",
+      "Adolfo Bioy Casares"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "\"El Aleph\" da nombre a su libro de cuentos de 1949."
+  },
+  {
+    "id": "sacerdotisa-h3",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "hard",
+    "pregunta": "¿Quién escribió \"Pedro Páramo\"?",
+    "opciones": [
+      "Augusto Roa Bastos",
+      "Horacio Quiroga",
+      "Mario Benedetti",
+      "Juan Rulfo"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Novela mexicana de 1955 que influyó mucho en el realismo mágico."
+  },
+  {
+    "id": "emperatriz-n1",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el animal terrestre más grande?",
+    "opciones": [
+      "Rinoceronte",
+      "Jirafa",
+      "Elefante africano",
+      "Hipopótamo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Puede superar las 6 toneladas."
+  },
+  {
+    "id": "emperatriz-n2",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Qué órgano bombea la sangre por el cuerpo?",
+    "opciones": [
+      "Hígado",
+      "Pulmón",
+      "Corazón",
+      "Riñón"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El corazón impulsa la sangre a través del sistema circulatorio."
+  },
+  {
+    "id": "emperatriz-n3",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Cuántas patas tiene una araña?",
+    "opciones": [
+      "10",
+      "8",
+      "6",
+      "12"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los arácnidos tienen ocho patas; los insectos, seis."
+  },
+  {
+    "id": "emperatriz-n4",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Qué mamífero es capaz de volar de forma sostenida?",
+    "opciones": [
+      "Murciélago",
+      "Petauro del azúcar",
+      "Colugo",
+      "Ardilla voladora"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los otros solo planean; los murciélagos baten las alas."
+  },
+  {
+    "id": "emperatriz-n5",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el proceso por el cual una oruga se transforma en mariposa?",
+    "opciones": [
+      "Fotosíntesis",
+      "Metamorfosis",
+      "Hibernación",
+      "Mutación"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Pasa por las etapas de huevo, larva, pupa y adulto."
+  },
+  {
+    "id": "emperatriz-n6",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el mamífero más grande del mundo?",
+    "opciones": [
+      "Cachalote",
+      "Elefante africano",
+      "Orca",
+      "Ballena azul"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Puede medir cerca de 30 metros."
+  },
+  {
+    "id": "emperatriz-n7",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Qué parte de la planta absorbe el agua del suelo?",
+    "opciones": [
+      "Hoja",
+      "Flor",
+      "Tallo",
+      "Raíz"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las raíces también anclan la planta al suelo."
+  },
+  {
+    "id": "emperatriz-n8",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos corazones tiene un pulpo?",
+    "opciones": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Dos bombean sangre a las branquias y uno al resto del cuerpo."
+  },
+  {
+    "id": "emperatriz-h1",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el hueso más largo del cuerpo humano?",
+    "opciones": [
+      "Fémur",
+      "Húmero",
+      "Peroné",
+      "Tibia"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El fémur está en el muslo."
+  },
+  {
+    "id": "emperatriz-h2",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "hard",
+    "pregunta": "¿Qué orgánulo celular es la \"central energética\" que produce ATP?",
+    "opciones": [
+      "Núcleo",
+      "Lisosoma",
+      "Mitocondria",
+      "Ribosoma"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Convierte nutrientes en energía utilizable por la célula."
+  },
+  {
+    "id": "emperatriz-h3",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "hard",
+    "pregunta": "¿A qué reino pertenecen las setas?",
+    "opciones": [
+      "Plantae",
+      "Fungi (hongos)",
+      "Animalia",
+      "Protista"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los hongos no son plantas: no hacen fotosíntesis y su pared celular es de quitina."
+  },
+  {
+    "id": "emperador-n1",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿En qué año llegó Cristóbal Colón a América?",
+    "opciones": [
+      "1519",
+      "1492",
+      "1607",
+      "1453"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Desembarcó el 12 de octubre de 1492."
+  },
+  {
+    "id": "emperador-n2",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Qué civilización construyó las pirámides de Giza?",
+    "opciones": [
+      "Persa",
+      "Romana",
+      "Egipcia",
+      "Maya"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Se levantaron hace unos 4.500 años."
+  },
+  {
+    "id": "emperador-n3",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Quién fue el primer presidente de Estados Unidos?",
+    "opciones": [
+      "Abraham Lincoln",
+      "John Adams",
+      "George Washington",
+      "Thomas Jefferson"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Gobernó de 1789 a 1797."
+  },
+  {
+    "id": "emperador-n4",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "opciones": [
+      "1918",
+      "1914",
+      "1905",
+      "1939"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Empezó tras el asesinato del archiduque Francisco Fernando."
+  },
+  {
+    "id": "emperador-n5",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Qué muro cayó en 1989 simbolizando el fin de la Guerra Fría?",
+    "opciones": [
+      "Gran Muralla China",
+      "Muro de Berlín",
+      "Muro de las Lamentaciones",
+      "Muro de Adriano"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Su caída precedió a la reunificación alemana de 1990."
+  },
+  {
+    "id": "emperador-n6",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Qué personaje es conocido como \"El Libertador\" de varios países sudamericanos?",
+    "opciones": [
+      "Antonio José de Sucre",
+      "Francisco de Miranda",
+      "José de San Martín",
+      "Simón Bolívar"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Lideró la independencia de Colombia, Venezuela, Ecuador, Perú y Bolivia."
+  },
+  {
+    "id": "emperador-n7",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Qué civilización construyó Machu Picchu?",
+    "opciones": [
+      "Olmeca",
+      "Maya",
+      "Azteca",
+      "Inca"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Fue levantada en el siglo XV en los Andes peruanos."
+  },
+  {
+    "id": "emperador-n8",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿En qué año llegó el ser humano a la Luna por primera vez?",
+    "opciones": [
+      "1972",
+      "1965",
+      "1975",
+      "1969"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El Apolo 11 alunizó el 20 de julio de 1969."
+  },
+  {
+    "id": "emperador-h1",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "hard",
+    "pregunta": "¿Qué tratado puso fin oficialmente a la Primera Guerra Mundial con Alemania en 1919?",
+    "opciones": [
+      "Tratado de Versalles",
+      "Tratado de Westfalia",
+      "Tratado de Tordesillas",
+      "Tratado de Utrecht"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Impuso duras condiciones y reparaciones a Alemania."
+  },
+  {
+    "id": "emperador-h2",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "hard",
+    "pregunta": "¿Qué general cartaginés cruzó los Alpes con elefantes para atacar Roma?",
+    "opciones": [
+      "Amílcar",
+      "Aníbal",
+      "Escipión",
+      "Asdrúbal"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Lo hizo durante la Segunda Guerra Púnica, en 218 a. C."
+  },
+  {
+    "id": "emperador-h3",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "hard",
+    "pregunta": "¿En qué año cayó Constantinopla en manos del Imperio otomano?",
+    "opciones": [
+      "1492",
+      "1453",
+      "1204",
+      "1521"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Su caída marcó el fin del Imperio bizantino."
+  },
+  {
+    "id": "enamorados-n1",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Qué banda de Liverpool lanzó el álbum \"Abbey Road\"?",
+    "opciones": [
+      "Pink Floyd",
+      "The Beatles",
+      "Queen",
+      "The Rolling Stones"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Salió en 1969."
+  },
+  {
+    "id": "enamorados-n2",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Qué artista es conocido como el \"Rey del Pop\"?",
+    "opciones": [
+      "Michael Jackson",
+      "Elvis Presley",
+      "Prince",
+      "Justin Timberlake"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Su álbum \"Thriller\" es de los más vendidos de la historia."
+  },
+  {
+    "id": "enamorados-n3",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Quién dirigió la película \"Titanic\" (1997)?",
+    "opciones": [
+      "Steven Spielberg",
+      "James Cameron",
+      "Ridley Scott",
+      "Christopher Nolan"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Ganó 11 premios Óscar."
+  },
+  {
+    "id": "enamorados-n4",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Cuántas cuerdas tiene una guitarra clásica estándar?",
+    "opciones": [
+      "7",
+      "4",
+      "5",
+      "6"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se afinan habitualmente como Mi-La-Re-Sol-Si-Mi."
+  },
+  {
+    "id": "enamorados-n5",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Qué cantante colombiana es famosa por la canción \"Hips Don't Lie\"?",
+    "opciones": [
+      "Karol G",
+      "Fanny Lu",
+      "Paulina Rubio",
+      "Shakira"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La canción es de 2006."
+  },
+  {
+    "id": "enamorados-n6",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Qué película animada de Disney cuenta la historia del león Simba?",
+    "opciones": [
+      "Madagascar",
+      "Bambi",
+      "Tarzán",
+      "El Rey León"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se estrenó en 1994."
+  },
+  {
+    "id": "enamorados-n7",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Cuál de estos es un instrumento de viento?",
+    "opciones": [
+      "Violín",
+      "Flauta",
+      "Arpa",
+      "Timbal"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El sonido de la flauta se produce al soplar aire."
+  },
+  {
+    "id": "enamorados-n8",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Quién dirigió la película \"El Padrino\" (1972)?",
+    "opciones": [
+      "Martin Scorsese",
+      "Francis Ford Coppola",
+      "Brian De Palma",
+      "Sidney Lumet"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Está basada en la novela de Mario Puzo."
+  },
+  {
+    "id": "enamorados-h1",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "hard",
+    "pregunta": "¿Qué compositor escribió \"Las cuatro estaciones\"?",
+    "opciones": [
+      "Joseph Haydn",
+      "Antonio Vivaldi",
+      "Wolfgang Amadeus Mozart",
+      "Johann Sebastian Bach"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Son cuatro conciertos para violín compuestos hacia 1720."
+  },
+  {
+    "id": "enamorados-h2",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "hard",
+    "pregunta": "¿Qué película fue la primera de animación nominada al Óscar a Mejor Película?",
+    "opciones": [
+      "Aladdín",
+      "El Rey León",
+      "La Bella y la Bestia",
+      "Toy Story"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Fue nominada en la ceremonia de 1992, por la película de 1991."
+  },
+  {
+    "id": "enamorados-h3",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "hard",
+    "pregunta": "¿Quién dirigió \"Parásitos\", ganadora del Óscar a Mejor Película en 2020?",
+    "opciones": [
+      "Bong Joon-ho",
+      "Kim Ki-duk",
+      "Park Chan-wook",
+      "Lee Chang-dong"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Fue la primera película en un idioma no inglés en ganar ese premio."
+  },
+  {
+    "id": "carro-n1",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos jugadores de un equipo están en la cancha en un partido de fútbol?",
+    "opciones": [
+      "10",
+      "9",
+      "11",
+      "12"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Incluyen al portero."
+  },
+  {
+    "id": "carro-n2",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Cada cuántos años se celebran los Juegos Olímpicos de verano?",
+    "opciones": [
+      "5",
+      "2",
+      "4",
+      "3"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Cada ciclo de cuatro años se llama olimpiada."
+  },
+  {
+    "id": "carro-n3",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿En qué deporte se usa raqueta y red y se juega el famoso torneo de Wimbledon?",
+    "opciones": [
+      "Tenis",
+      "Squash",
+      "Pádel",
+      "Bádminton"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Wimbledon se juega sobre césped en Londres."
+  },
+  {
+    "id": "carro-n4",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Qué selección ganó el Mundial de fútbol de 2022?",
+    "opciones": [
+      "Argentina",
+      "Croacia",
+      "Francia",
+      "Brasil"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Venció a Francia en la final por penales."
+  },
+  {
+    "id": "carro-n5",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos jugadores de un mismo equipo están en cancha en baloncesto?",
+    "opciones": [
+      "6",
+      "4",
+      "5",
+      "7"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Cada equipo juega con cinco jugadores en cancha."
+  },
+  {
+    "id": "carro-n6",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿En qué deporte se utiliza un bate y se corren bases?",
+    "opciones": [
+      "Rugby",
+      "Béisbol",
+      "Golf",
+      "Fútbol americano"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El jugador batea y corre por las bases hasta llegar a home."
+  },
+  {
+    "id": "carro-n7",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos kilómetros mide aproximadamente una maratón?",
+    "opciones": [
+      "21 km",
+      "10 km",
+      "42 km",
+      "50 km"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La distancia oficial es 42,195 km."
+  },
+  {
+    "id": "carro-n8",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Qué ciclista colombiano ganó el Tour de Francia en 2019?",
+    "opciones": [
+      "Esteban Chaves",
+      "Rigoberto Urán",
+      "Egan Bernal",
+      "Nairo Quintana"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Fue el primer colombiano en ganar el Tour."
+  },
+  {
+    "id": "carro-h1",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "hard",
+    "pregunta": "¿En qué ciudad se celebraron los primeros Juegos Olímpicos de la era moderna, en 1896?",
+    "opciones": [
+      "Atenas",
+      "París",
+      "Londres",
+      "Roma"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se eligió Atenas como homenaje al origen griego de los Juegos."
+  },
+  {
+    "id": "carro-h2",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "hard",
+    "pregunta": "¿Cuánto mide una vuelta a una pista olímpica de atletismo?",
+    "opciones": [
+      "200 metros",
+      "400 metros",
+      "500 metros",
+      "800 metros"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Por eso los 400 m planos son una vuelta completa."
+  },
+  {
+    "id": "carro-h3",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "hard",
+    "pregunta": "¿Qué país es la cuna del judo?",
+    "opciones": [
+      "Corea del Sur",
+      "Tailandia",
+      "China",
+      "Japón"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Lo creó Jigoro Kano en 1882."
+  },
+  {
+    "id": "ermitano-n1",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Quién es el dios griego del mar?",
+    "opciones": [
+      "Zeus",
+      "Poseidón",
+      "Apolo",
+      "Hades"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Su arma es el tridente."
+  },
+  {
+    "id": "ermitano-n2",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Qué filósofo griego fue maestro de Platón?",
+    "opciones": [
+      "Epicuro",
+      "Aristóteles",
+      "Pitágoras",
+      "Sócrates"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Aristóteles, a su vez, fue discípulo de Platón."
+  },
+  {
+    "id": "ermitano-n3",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el dios nórdico del trueno?",
+    "opciones": [
+      "Thor",
+      "Freyr",
+      "Loki",
+      "Odín"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Su arma es el martillo Mjölnir."
+  },
+  {
+    "id": "ermitano-n4",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Qué diosa griega representa la sabiduría y la estrategia?",
+    "opciones": [
+      "Afrodita",
+      "Atenea",
+      "Hera",
+      "Artemisa"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Nació de la cabeza de Zeus, según el mito."
+  },
+  {
+    "id": "ermitano-n5",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Qué dios egipcio, con cabeza de chacal, se asocia con el embalsamamiento?",
+    "opciones": [
+      "Osiris",
+      "Ra",
+      "Horus",
+      "Anubis"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Guiaba a las almas en el viaje al más allá."
+  },
+  {
+    "id": "ermitano-n6",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Qué filósofo es famoso por la frase \"Pienso, luego existo\"?",
+    "opciones": [
+      "Immanuel Kant",
+      "Friedrich Nietzsche",
+      "René Descartes",
+      "David Hume"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Es el punto de partida de su método filosófico."
+  },
+  {
+    "id": "ermitano-n7",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama la criatura mitológica griega con serpientes en lugar de cabello?",
+    "opciones": [
+      "Quimera",
+      "Escila",
+      "Hidra",
+      "Medusa"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Quien la miraba a los ojos se convertía en piedra."
+  },
+  {
+    "id": "ermitano-n8",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Qué dios romano equivale al Zeus griego?",
+    "opciones": [
+      "Saturno",
+      "Marte",
+      "Neptuno",
+      "Júpiter"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Era el rey de los dioses romanos."
+  },
+  {
+    "id": "ermitano-h1",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "hard",
+    "pregunta": "¿Qué filósofo alemán escribió \"Así habló Zaratustra\"?",
+    "opciones": [
+      "Georg Hegel",
+      "Friedrich Nietzsche",
+      "Arthur Schopenhauer",
+      "Immanuel Kant"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La obra apareció entre 1883 y 1885."
+  },
+  {
+    "id": "ermitano-h2",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "hard",
+    "pregunta": "En la mitología griega, ¿quién fue condenado a empujar una roca colina arriba eternamente?",
+    "opciones": [
+      "Ixión",
+      "Sísifo",
+      "Tántalo",
+      "Prometeo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La roca siempre rodaba de nuevo hacia abajo."
+  },
+  {
+    "id": "ermitano-h3",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "hard",
+    "pregunta": "¿En qué obra de Platón aparece la alegoría de la caverna?",
+    "opciones": [
+      "Timeo",
+      "La República",
+      "El banquete",
+      "Fedón"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Aparece en el libro VII."
+  },
+  {
+    "id": "rueda-n1",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el fontanero de gorra roja, mascota de Nintendo?",
+    "opciones": [
+      "Toad",
+      "Wario",
+      "Luigi",
+      "Mario"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Mario debutó en 1981 en \"Donkey Kong\"."
+  },
+  {
+    "id": "rueda-n2",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el Pokémon amarillo, de cola en forma de rayo, mascota de la franquicia?",
+    "opciones": [
+      "Raichu",
+      "Meowth",
+      "Pikachu",
+      "Jigglypuff"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Es el Pokémon número 25 de la Pokédex."
+  },
+  {
+    "id": "rueda-n3",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿En qué videojuego construyes con bloques y debes evitar a los creepers?",
+    "opciones": [
+      "Roblox",
+      "Terraria",
+      "Fortnite",
+      "Minecraft"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Fue creado por Markus Persson y lanzado completo en 2011."
+  },
+  {
+    "id": "rueda-n4",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama la princesa que Mario suele rescatar?",
+    "opciones": [
+      "Zelda",
+      "Rosalina",
+      "Peach",
+      "Daisy"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Zelda es la princesa de otra saga: Link la rescata a ella."
+  },
+  {
+    "id": "rueda-n5",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es la identidad secreta de Batman?",
+    "opciones": [
+      "Bruce Wayne",
+      "Tony Stark",
+      "Clark Kent",
+      "Peter Parker"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Clark Kent es Superman; Peter Parker, Spider-Man."
+  },
+  {
+    "id": "rueda-n6",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el erizo azul mascota de SEGA?",
+    "opciones": [
+      "Shadow",
+      "Tails",
+      "Knuckles",
+      "Sonic"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Sonic debutó en 1991."
+  },
+  {
+    "id": "rueda-n7",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el joven mago con una cicatriz en forma de rayo creado por J. K. Rowling?",
+    "opciones": [
+      "Harry Potter",
+      "Draco Malfoy",
+      "Neville Longbottom",
+      "Ron Weasley"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Esa cicatriz se la hizo Voldemort al intentar matarlo de bebé."
+  },
+  {
+    "id": "rueda-n8",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "En Star Wars, ¿quién es el padre de Luke Skywalker?",
+    "opciones": [
+      "Obi-Wan Kenobi",
+      "Darth Vader",
+      "Yoda",
+      "Han Solo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se revela en \"El imperio contraataca\"."
+  },
+  {
+    "id": "rueda-h1",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "hard",
+    "pregunta": "¿En qué año se lanzaron los primeros videojuegos de Pokémon (Rojo y Verde) en Japón?",
+    "opciones": [
+      "1996",
+      "1992",
+      "2001",
+      "1999"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Salieron para la Game Boy el 27 de febrero de 1996."
+  },
+  {
+    "id": "rueda-h2",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "hard",
+    "pregunta": "¿Cómo se llama el planeta natal de Goku, en Dragon Ball?",
+    "opciones": [
+      "Planeta Vegeta",
+      "La Tierra",
+      "Namek",
+      "Kanassa"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Goku nació allí como un guerrero saiyajin."
+  },
+  {
+    "id": "rueda-h3",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "hard",
+    "pregunta": "¿Qué videojuego de Valve tiene como protagonista al científico Gordon Freeman?",
+    "opciones": [
+      "Counter-Strike",
+      "Portal",
+      "Left 4 Dead",
+      "Half-Life"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se lanzó en 1998."
+  },
+  {
+    "id": "mundo-n1",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es la capital de Australia?",
+    "opciones": [
+      "Perth",
+      "Melbourne",
+      "Sídney",
+      "Canberra"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Sídney es la más poblada, pero la capital es Canberra."
+  },
+  {
+    "id": "mundo-n2",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el río más largo de Sudamérica?",
+    "opciones": [
+      "Orinoco",
+      "Amazonas",
+      "Magdalena",
+      "Paraná"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "También es el de mayor caudal del mundo."
+  },
+  {
+    "id": "mundo-n3",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el continente más grande del mundo?",
+    "opciones": [
+      "Asia",
+      "Europa",
+      "África",
+      "América"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Ocupa cerca del 30 % de la superficie terrestre."
+  },
+  {
+    "id": "mundo-n4",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es la capital de Japón?",
+    "opciones": [
+      "Nagoya",
+      "Osaka",
+      "Kioto",
+      "Tokio"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Kioto fue capital imperial durante siglos."
+  },
+  {
+    "id": "mundo-n5",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el país más grande del mundo por superficie?",
+    "opciones": [
+      "Estados Unidos",
+      "Rusia",
+      "China",
+      "Canadá"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se extiende por Europa del Este y el norte de Asia."
+  },
+  {
+    "id": "mundo-n6",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Qué cordillera recorre Sudamérica de norte a sur?",
+    "opciones": [
+      "Himalaya",
+      "Alpes",
+      "Rocosas",
+      "Los Andes"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es la cordillera continental más larga del mundo."
+  },
+  {
+    "id": "mundo-n7",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el desierto cálido más grande del mundo?",
+    "opciones": [
+      "Gobi",
+      "Kalahari",
+      "Atacama",
+      "Sahara"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Cubre gran parte del norte de África."
+  },
+  {
+    "id": "mundo-n8",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es la capital de Colombia?",
+    "opciones": [
+      "Bogotá",
+      "Medellín",
+      "Cartagena",
+      "Cali"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Está ubicada en la cordillera Oriental, a unos 2.600 m de altitud."
+  },
+  {
+    "id": "mundo-h1",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el punto más alto de la Tierra sobre el nivel del mar?",
+    "opciones": [
+      "Kangchenjunga",
+      "Aconcagua",
+      "K2",
+      "Monte Everest"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Mide unos 8.849 m."
+  },
+  {
+    "id": "mundo-h2",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el lago más profundo del mundo?",
+    "opciones": [
+      "Baikal",
+      "Tanganica",
+      "Titicaca",
+      "Superior"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Está en Rusia y supera los 1.600 m de profundidad."
+  },
+  {
+    "id": "mundo-h3",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "hard",
+    "pregunta": "¿Qué estrecho separa España de Marruecos?",
+    "opciones": [
+      "Estrecho de Magallanes",
+      "Estrecho de Bering",
+      "Estrecho de Gibraltar",
+      "Estrecho de Ormuz"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Une el Mediterráneo con el Atlántico."
+  },
+  {
+    "id": "loco-n9",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuánto es 9 × 9?",
+    "opciones": [
+      "89",
+      "81",
+      "72",
+      "79"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "9 × 9 = 81."
+  },
+  {
+    "id": "loco-n10",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos lados tiene un octágono?",
+    "opciones": [
+      "10",
+      "7",
+      "8",
+      "6"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Octo significa ocho."
+  },
+  {
+    "id": "loco-n11",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuánto es 100 ÷ 4?",
+    "opciones": [
+      "50",
+      "25",
+      "20",
+      "40"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "100 dividido entre 4 es 25."
+  },
+  {
+    "id": "loco-n12",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos grados mide un ángulo recto?",
+    "opciones": [
+      "180°",
+      "90°",
+      "100°",
+      "45°"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Un ángulo recto es un cuarto de giro completo."
+  },
+  {
+    "id": "loco-n13",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el siguiente número de la serie 2, 4, 8, 16…?",
+    "opciones": [
+      "36",
+      "24",
+      "32",
+      "30"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Cada número es el doble del anterior."
+  },
+  {
+    "id": "loco-n14",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuánto es 3 elevado al cubo (3³)?",
+    "opciones": [
+      "18",
+      "81",
+      "27",
+      "9"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "3 × 3 × 3 = 27."
+  },
+  {
+    "id": "loco-n15",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos centímetros hay en un metro?",
+    "opciones": [
+      "100",
+      "50",
+      "1.000",
+      "10"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Centi significa centésima parte."
+  },
+  {
+    "id": "loco-n16",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el perímetro de un cuadrado de lado 5?",
+    "opciones": [
+      "15",
+      "10",
+      "25",
+      "20"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "4 lados × 5 = 20."
+  },
+  {
+    "id": "loco-n17",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Qué número representa la letra L en números romanos?",
+    "opciones": [
+      "10",
+      "100",
+      "50",
+      "500"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "L = 50, C = 100, D = 500."
+  },
+  {
+    "id": "loco-n18",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el área de un rectángulo de 6 de largo por 4 de ancho?",
+    "opciones": [
+      "48",
+      "20",
+      "24",
+      "10"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Área = largo × ancho = 6 × 4."
+  },
+  {
+    "id": "loco-n19",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el único número primo que es par?",
+    "opciones": [
+      "2",
+      "6",
+      "4",
+      "0"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Todos los demás pares son divisibles entre 2."
+  },
+  {
+    "id": "loco-n20",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "normal",
+    "pregunta": "¿Cuánto es 15 + 27?",
+    "opciones": [
+      "32",
+      "41",
+      "43",
+      "42"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "15 + 27 = 42."
+  },
+  {
+    "id": "loco-h4",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el valor aproximado del número e, base del logaritmo natural?",
+    "opciones": [
+      "3,141",
+      "1,732",
+      "2,718",
+      "2,236"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "e ≈ 2,71828…"
+  },
+  {
+    "id": "loco-h5",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el valor aproximado de la raíz cuadrada de 2?",
+    "opciones": [
+      "1,732",
+      "2,236",
+      "1,414",
+      "1,618"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "√2 ≈ 1,41421… y fue el primer número irracional conocido."
+  },
+  {
+    "id": "loco-h6",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "hard",
+    "pregunta": "¿Cuántas diagonales tiene un pentágono?",
+    "opciones": [
+      "10",
+      "5",
+      "3",
+      "7"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se calcula con n(n−3)/2 = 5 × 2 / 2 = 5."
+  },
+  {
+    "id": "loco-h7",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "hard",
+    "pregunta": "¿Cuánto es 5! (cinco factorial)?",
+    "opciones": [
+      "25",
+      "120",
+      "720",
+      "60"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "5 × 4 × 3 × 2 × 1 = 120."
+  },
+  {
+    "id": "loco-h8",
+    "categoria": "Matemáticas",
+    "carta": "El Loco",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el valor aproximado de la razón áurea (φ)?",
+    "opciones": [
+      "1,414",
+      "1,618",
+      "1,732",
+      "2,718"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "φ = (1 + √5) / 2 ≈ 1,618."
+  },
+  {
+    "id": "mago-n9",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el planeta más cercano al Sol?",
+    "opciones": [
+      "Mercurio",
+      "Tierra",
+      "Marte",
+      "Venus"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Mercurio orbita a unos 58 millones de km del Sol."
+  },
+  {
+    "id": "mago-n10",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el símbolo químico del sodio?",
+    "opciones": [
+      "So",
+      "Na",
+      "S",
+      "Sd"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Na viene del latín natrium."
+  },
+  {
+    "id": "mago-n11",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Qué gas necesitan los humanos para respirar?",
+    "opciones": [
+      "Helio",
+      "Argón",
+      "Oxígeno",
+      "Neón"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El oxígeno se usa en la respiración celular."
+  },
+  {
+    "id": "mago-n12",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿A qué temperatura hierve el agua a nivel del mar?",
+    "opciones": [
+      "90 °C",
+      "120 °C",
+      "80 °C",
+      "100 °C"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es el punto de ebullición estándar del agua."
+  },
+  {
+    "id": "mago-n13",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Qué instrumento mide la temperatura?",
+    "opciones": [
+      "Voltímetro",
+      "Termómetro",
+      "Barómetro",
+      "Higrómetro"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El barómetro mide presión y el higrómetro, humedad."
+  },
+  {
+    "id": "mago-n14",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama la galaxia en la que vive la Tierra?",
+    "opciones": [
+      "Vía Láctea",
+      "Andrómeda",
+      "Galaxia del Sombrero",
+      "Galaxia del Triángulo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Es una galaxia espiral con cientos de miles de millones de estrellas."
+  },
+  {
+    "id": "mago-n15",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿A qué científico se atribuye la ley de la gravitación universal?",
+    "opciones": [
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Johannes Kepler",
+      "Isaac Newton"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La historia de la manzana es popular, aunque probablemente embellecida."
+  },
+  {
+    "id": "mago-n16",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Qué significan las siglas USB?",
+    "opciones": [
+      "Unión Segura de Bytes",
+      "Unidad de Sistema Básico",
+      "Base de Software Universal",
+      "Bus Serie Universal"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es un estándar para conectar dispositivos."
+  },
+  {
+    "id": "mago-n17",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Qué planeta es conocido como el \"planeta rojo\"?",
+    "opciones": [
+      "Mercurio",
+      "Venus",
+      "Júpiter",
+      "Marte"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Su color se debe al óxido de hierro en su superficie."
+  },
+  {
+    "id": "mago-n18",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Qué metal es líquido a temperatura ambiente?",
+    "opciones": [
+      "Hierro",
+      "Mercurio",
+      "Plomo",
+      "Aluminio"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es el único metal líquido en condiciones normales."
+  },
+  {
+    "id": "mago-n19",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Quién es considerado el creador de la World Wide Web?",
+    "opciones": [
+      "Steve Jobs",
+      "Linus Torvalds",
+      "Bill Gates",
+      "Tim Berners-Lee"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La propuso en 1989 mientras trabajaba en el CERN."
+  },
+  {
+    "id": "mago-n20",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es la unidad de fuerza en el Sistema Internacional?",
+    "opciones": [
+      "Julio",
+      "Pascal",
+      "Vatio",
+      "Newton"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se nombró en honor a Isaac Newton."
+  },
+  {
+    "id": "mago-h4",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el símbolo químico del potasio?",
+    "opciones": [
+      "Po",
+      "Pt",
+      "K",
+      "P"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "K viene del latín kalium."
+  },
+  {
+    "id": "mago-h5",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el pH aproximado del agua pura?",
+    "opciones": [
+      "14",
+      "5",
+      "0",
+      "7"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Un pH de 7 es neutro."
+  },
+  {
+    "id": "mago-h6",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el planeta más caliente del sistema solar?",
+    "opciones": [
+      "Mercurio",
+      "Marte",
+      "Júpiter",
+      "Venus"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Su densa atmósfera de CO2 provoca un efecto invernadero extremo."
+  },
+  {
+    "id": "mago-h7",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "hard",
+    "pregunta": "¿Qué lenguaje de programación creó Guido van Rossum?",
+    "opciones": [
+      "Java",
+      "Ruby",
+      "Python",
+      "C++"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Python se publicó por primera vez en 1991."
+  },
+  {
+    "id": "mago-h8",
+    "categoria": "Ciencia y tecnología",
+    "carta": "El Mago",
+    "nivel": "hard",
+    "pregunta": "¿Cuántos elementos tiene la tabla periódica actual?",
+    "opciones": [
+      "126",
+      "108",
+      "118",
+      "92"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El elemento 118 es el oganesón."
+  },
+  {
+    "id": "sacerdotisa-n9",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió la saga de \"Harry Potter\"?",
+    "opciones": [
+      "Stephenie Meyer",
+      "Suzanne Collins",
+      "Roald Dahl",
+      "J. K. Rowling"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El primer libro se publicó en 1997."
+  },
+  {
+    "id": "sacerdotisa-n10",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"Las aventuras de Tom Sawyer\"?",
+    "opciones": [
+      "Mark Twain",
+      "Jack London",
+      "Herman Melville",
+      "Charles Dickens"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Mark Twain es el seudónimo de Samuel Clemens."
+  },
+  {
+    "id": "sacerdotisa-n11",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿A quién se atribuye \"La Odisea\"?",
+    "opciones": [
+      "Homero",
+      "Virgilio",
+      "Sófocles",
+      "Hesíodo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Narra el regreso de Odiseo a Ítaca."
+  },
+  {
+    "id": "sacerdotisa-n12",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el detective belga creado por Agatha Christie?",
+    "opciones": [
+      "Auguste Dupin",
+      "Philip Marlowe",
+      "Sam Spade",
+      "Hércules Poirot"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Protagoniza más de 30 novelas, entre ellas \"Asesinato en el Orient Express\"."
+  },
+  {
+    "id": "sacerdotisa-n13",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió la novela \"1984\"?",
+    "opciones": [
+      "George Orwell",
+      "Aldous Huxley",
+      "H. G. Wells",
+      "Ray Bradbury"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se publicó en 1949 e inventó conceptos como el \"Gran Hermano\"."
+  },
+  {
+    "id": "sacerdotisa-n14",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"La Divina Comedia\"?",
+    "opciones": [
+      "Virgilio",
+      "Dante Alighieri",
+      "Francesco Petrarca",
+      "Giovanni Boccaccio"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se divide en Infierno, Purgatorio y Paraíso."
+  },
+  {
+    "id": "sacerdotisa-n15",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"Frankenstein\"?",
+    "opciones": [
+      "Bram Stoker",
+      "Jane Austen",
+      "Emily Brontë",
+      "Mary Shelley"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La publicó en 1818, cuando tenía 20 años."
+  },
+  {
+    "id": "sacerdotisa-n16",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"Veinte mil leguas de viaje submarino\"?",
+    "opciones": [
+      "H. G. Wells",
+      "Jack London",
+      "Mark Twain",
+      "Julio Verne"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "En ella aparece el capitán Nemo y el submarino Nautilus."
+  },
+  {
+    "id": "sacerdotisa-n17",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"Orgullo y prejuicio\"?",
+    "opciones": [
+      "Virginia Woolf",
+      "Mary Shelley",
+      "Jane Austen",
+      "Charlotte Brontë"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Se publicó en 1813."
+  },
+  {
+    "id": "sacerdotisa-n18",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"Drácula\"?",
+    "opciones": [
+      "Mary Shelley",
+      "H. P. Lovecraft",
+      "Edgar Allan Poe",
+      "Bram Stoker"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se publicó en 1897."
+  },
+  {
+    "id": "sacerdotisa-n19",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"La casa de los espíritus\"?",
+    "opciones": [
+      "Gioconda Belli",
+      "Elena Poniatowska",
+      "Laura Esquivel",
+      "Isabel Allende"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es una novela chilena de 1982."
+  },
+  {
+    "id": "sacerdotisa-n20",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "normal",
+    "pregunta": "¿Quién escribió \"El viejo y el mar\"?",
+    "opciones": [
+      "William Faulkner",
+      "John Steinbeck",
+      "F. Scott Fitzgerald",
+      "Ernest Hemingway"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Le valió el Premio Pulitzer en 1953."
+  },
+  {
+    "id": "sacerdotisa-h4",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "hard",
+    "pregunta": "¿Quién escribió \"Ulises\" (1922)?",
+    "opciones": [
+      "James Joyce",
+      "W. B. Yeats",
+      "Samuel Beckett",
+      "Oscar Wilde"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La novela transcurre en un solo día en Dublín."
+  },
+  {
+    "id": "sacerdotisa-h5",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "hard",
+    "pregunta": "¿Quién escribió \"En busca del tiempo perdido\"?",
+    "opciones": [
+      "Émile Zola",
+      "Gustave Flaubert",
+      "Marcel Proust",
+      "Stendhal"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Consta de siete volúmenes."
+  },
+  {
+    "id": "sacerdotisa-h6",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "hard",
+    "pregunta": "¿Qué poeta chileno escribió \"Veinte poemas de amor y una canción desesperada\"?",
+    "opciones": [
+      "Nicanor Parra",
+      "Pablo Neruda",
+      "Vicente Huidobro",
+      "Gabriela Mistral"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se publicó en 1924."
+  },
+  {
+    "id": "sacerdotisa-h7",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "hard",
+    "pregunta": "¿Quién escribió \"Los miserables\"?",
+    "opciones": [
+      "Gustave Flaubert",
+      "Victor Hugo",
+      "Alexandre Dumas",
+      "Honoré de Balzac"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se publicó en 1862 y su protagonista es Jean Valjean."
+  },
+  {
+    "id": "sacerdotisa-h8",
+    "categoria": "Literatura",
+    "carta": "La Sacerdotisa",
+    "nivel": "hard",
+    "pregunta": "¿Quién escribió \"La ciudad y los perros\"?",
+    "opciones": [
+      "Mario Vargas Llosa",
+      "José Donoso",
+      "Alejo Carpentier",
+      "Carlos Fuentes"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Fue su primera novela, publicada en 1963."
+  },
+  {
+    "id": "emperatriz-n9",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el animal terrestre más rápido?",
+    "opciones": [
+      "Guepardo",
+      "León",
+      "Antílope",
+      "Caballo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Puede superar los 100 km/h en carreras cortas."
+  },
+  {
+    "id": "emperatriz-n10",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el animal más alto del mundo?",
+    "opciones": [
+      "Jirafa",
+      "Camello",
+      "Elefante",
+      "Avestruz"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Puede medir más de 5 metros."
+  },
+  {
+    "id": "emperatriz-n11",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Qué insecto produce miel?",
+    "opciones": [
+      "Hormiga",
+      "Mariposa",
+      "Avispa",
+      "Abeja"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las abejas elaboran la miel a partir del néctar de las flores."
+  },
+  {
+    "id": "emperatriz-n12",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Cuántas patas tiene un insecto?",
+    "opciones": [
+      "8",
+      "10",
+      "6",
+      "4"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Tienen tres pares de patas."
+  },
+  {
+    "id": "emperatriz-n13",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Qué órganos usamos para respirar?",
+    "opciones": [
+      "Riñones",
+      "Hígado",
+      "Estómago",
+      "Pulmones"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Allí el oxígeno pasa a la sangre."
+  },
+  {
+    "id": "emperatriz-n14",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Qué animal es conocido como el \"rey de la selva\"?",
+    "opciones": [
+      "Tigre",
+      "Leopardo",
+      "Gorila",
+      "León"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "En realidad vive en sabanas y no en selvas."
+  },
+  {
+    "id": "emperatriz-n15",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llaman los animales que se alimentan solo de plantas?",
+    "opciones": [
+      "Omnívoros",
+      "Herbívoros",
+      "Insectívoros",
+      "Carnívoros"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las vacas y los caballos son herbívoros."
+  },
+  {
+    "id": "emperatriz-n16",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Qué ave no vuela y vive en la Antártida?",
+    "opciones": [
+      "Pelícano",
+      "Albatros",
+      "Pingüino",
+      "Gaviota"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Sus alas son aletas adaptadas para nadar."
+  },
+  {
+    "id": "emperatriz-n17",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el órgano más grande del cuerpo humano?",
+    "opciones": [
+      "Intestino",
+      "Hígado",
+      "Cerebro",
+      "Piel"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Cubre unos 2 m² en un adulto."
+  },
+  {
+    "id": "emperatriz-n18",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Qué tipo de animal es una ballena?",
+    "opciones": [
+      "Anfibio",
+      "Reptil",
+      "Pez",
+      "Mamífero"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Respiran aire con pulmones y amamantan a sus crías."
+  },
+  {
+    "id": "emperatriz-n19",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Qué árbol produce bellotas?",
+    "opciones": [
+      "Olivo",
+      "Pino",
+      "Abedul",
+      "Roble"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La bellota es el fruto del roble y la encina."
+  },
+  {
+    "id": "emperatriz-n20",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "normal",
+    "pregunta": "¿Qué vitamina produce el cuerpo al exponerse al sol?",
+    "opciones": [
+      "Vitamina D",
+      "Vitamina C",
+      "Vitamina K",
+      "Vitamina A"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Es clave para absorber el calcio."
+  },
+  {
+    "id": "emperatriz-h4",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "hard",
+    "pregunta": "¿Qué científico propuso la teoría de la evolución por selección natural?",
+    "opciones": [
+      "Louis Pasteur",
+      "Jean-Baptiste Lamarck",
+      "Gregor Mendel",
+      "Charles Darwin"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La publicó en \"El origen de las especies\" (1859)."
+  },
+  {
+    "id": "emperatriz-h5",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "hard",
+    "pregunta": "¿Cuántos cromosomas tiene una célula humana normal?",
+    "opciones": [
+      "44",
+      "23",
+      "48",
+      "46"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Son 23 pares."
+  },
+  {
+    "id": "emperatriz-h6",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "hard",
+    "pregunta": "¿Cómo se llama el proceso por el cual las plantas liberan vapor de agua por las hojas?",
+    "opciones": [
+      "Germinación",
+      "Fermentación",
+      "Transpiración",
+      "Respiración"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Ocurre sobre todo a través de los estomas."
+  },
+  {
+    "id": "emperatriz-h7",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "hard",
+    "pregunta": "¿Qué tipo de sangre es donante universal de glóbulos rojos?",
+    "opciones": [
+      "AB positivo",
+      "O negativo",
+      "B negativo",
+      "A positivo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "No tiene antígenos A, B ni Rh."
+  },
+  {
+    "id": "emperatriz-h8",
+    "categoria": "Naturaleza y biología",
+    "carta": "La Emperatriz",
+    "nivel": "hard",
+    "pregunta": "¿Qué animal tiene el cerebro más grande del reino animal?",
+    "opciones": [
+      "Elefante",
+      "Ballena azul",
+      "Delfín",
+      "Cachalote"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Su cerebro puede pesar cerca de 8 kg."
+  },
+  {
+    "id": "emperador-n9",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Qué civilización construyó el Coliseo?",
+    "opciones": [
+      "Griega",
+      "Romana",
+      "Egipcia",
+      "Persa"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se inauguró en el año 80 d. C. en Roma."
+  },
+  {
+    "id": "emperador-n10",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿En qué año comenzó la Segunda Guerra Mundial?",
+    "opciones": [
+      "1939",
+      "1941",
+      "1936",
+      "1914"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Empezó con la invasión alemana de Polonia."
+  },
+  {
+    "id": "emperador-n11",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Quién fue el líder de la Alemania nazi?",
+    "opciones": [
+      "Adolf Hitler",
+      "Joseph Stalin",
+      "Francisco Franco",
+      "Benito Mussolini"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Gobernó Alemania de 1933 a 1945."
+  },
+  {
+    "id": "emperador-n12",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿En qué año se firmó la Declaración de Independencia de Estados Unidos?",
+    "opciones": [
+      "1750",
+      "1776",
+      "1789",
+      "1812"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se adoptó el 4 de julio de 1776."
+  },
+  {
+    "id": "emperador-n13",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Qué imperio dominaba el centro de México cuando llegaron los españoles?",
+    "opciones": [
+      "Azteca (mexica)",
+      "Inca",
+      "Olmeca",
+      "Maya"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Su capital era Tenochtitlan."
+  },
+  {
+    "id": "emperador-n14",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llamaba el faraón niño cuya tumba se descubrió en 1922?",
+    "opciones": [
+      "Ramsés II",
+      "Tutankamón",
+      "Keops",
+      "Akenatón"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Howard Carter halló su tumba casi intacta."
+  },
+  {
+    "id": "emperador-n15",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Qué acontecimiento comenzó en Francia en 1789?",
+    "opciones": [
+      "La Revolución Industrial",
+      "La Revolución Francesa",
+      "La Revolución Rusa",
+      "La Guerra de los Cien Años"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Comenzó con la toma de la Bastilla."
+  },
+  {
+    "id": "emperador-n16",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Qué navegante portugués llegó a la India por mar en 1498?",
+    "opciones": [
+      "Vasco da Gama",
+      "Américo Vespucio",
+      "Bartolomeu Dias",
+      "Fernando de Magallanes"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Abrió la ruta marítima a Asia rodeando África."
+  },
+  {
+    "id": "emperador-n17",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Quién fue el primer ser humano en viajar al espacio?",
+    "opciones": [
+      "Yuri Gagarin",
+      "John Glenn",
+      "Neil Armstrong",
+      "Alan Shepard"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Lo hizo el 12 de abril de 1961."
+  },
+  {
+    "id": "emperador-n18",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Qué civilización inventó la escritura cuneiforme?",
+    "opciones": [
+      "Sumeria",
+      "China",
+      "Fenicia",
+      "Egipcia"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Surgió en Mesopotamia hace más de 5.000 años."
+  },
+  {
+    "id": "emperador-n19",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Qué famoso barco se hundió en 1912 tras chocar con un iceberg?",
+    "opciones": [
+      "El Titanic",
+      "El Britannic",
+      "El Queen Mary",
+      "El Lusitania"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se hundió en su viaje inaugural."
+  },
+  {
+    "id": "emperador-n20",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "normal",
+    "pregunta": "¿Qué emperador francés fue derrotado en Waterloo en 1815?",
+    "opciones": [
+      "Carlomagno",
+      "Napoleón III",
+      "Napoleón Bonaparte",
+      "Luis XIV"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Después fue exiliado a Santa Elena."
+  },
+  {
+    "id": "emperador-h4",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "hard",
+    "pregunta": "¿Qué batalla de 1819 selló la independencia de Colombia?",
+    "opciones": [
+      "Batalla de Boyacá",
+      "Batalla de Ayacucho",
+      "Batalla de Carabobo",
+      "Batalla de Pichincha"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se libró el 7 de agosto de 1819."
+  },
+  {
+    "id": "emperador-h5",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "hard",
+    "pregunta": "¿Quién fue el primer emperador de Roma?",
+    "opciones": [
+      "Augusto",
+      "Trajano",
+      "Julio César",
+      "Nerón"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Octavio recibió el título de Augusto en el 27 a. C."
+  },
+  {
+    "id": "emperador-h6",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "hard",
+    "pregunta": "¿En qué año cayó el Imperio romano de Occidente?",
+    "opciones": [
+      "800",
+      "476",
+      "395",
+      "410"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Ese año fue depuesto Rómulo Augústulo."
+  },
+  {
+    "id": "emperador-h7",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "hard",
+    "pregunta": "¿Qué dinastía china construyó la mayor parte de la Gran Muralla que se conserva hoy?",
+    "opciones": [
+      "Dinastía Han",
+      "Dinastía Ming",
+      "Dinastía Tang",
+      "Dinastía Qing"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La reforzaron entre los siglos XIV y XVII."
+  },
+  {
+    "id": "emperador-h8",
+    "categoria": "Historia",
+    "carta": "El Emperador",
+    "nivel": "hard",
+    "pregunta": "¿Qué tratado de 1648 puso fin a la Guerra de los Treinta Años?",
+    "opciones": [
+      "Tratado de Versalles",
+      "Paz de Westfalia",
+      "Tratado de Madrid",
+      "Tratado de Utrecht"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se considera el origen del sistema moderno de Estados soberanos."
+  },
+  {
+    "id": "enamorados-n9",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Qué compositor escribió la Quinta Sinfonía, famosa por sus cuatro notas iniciales?",
+    "opciones": [
+      "Franz Schubert",
+      "Johann Sebastian Bach",
+      "Wolfgang Amadeus Mozart",
+      "Ludwig van Beethoven"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se estrenó en 1808."
+  },
+  {
+    "id": "enamorados-n10",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Cuántas teclas tiene un piano estándar?",
+    "opciones": [
+      "88",
+      "76",
+      "66",
+      "100"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Son 52 blancas y 36 negras."
+  },
+  {
+    "id": "enamorados-n11",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Qué banda británica lanzó \"Bohemian Rhapsody\"?",
+    "opciones": [
+      "The Who",
+      "Led Zeppelin",
+      "Queen",
+      "Genesis"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Su cantante era Freddie Mercury."
+  },
+  {
+    "id": "enamorados-n12",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el ogro verde protagonista de una famosa película animada de DreamWorks?",
+    "opciones": [
+      "Shrek",
+      "Hulk",
+      "Sulley",
+      "El Grinch"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La película es de 2001."
+  },
+  {
+    "id": "enamorados-n13",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Qué actor interpretó a Jack Sparrow en \"Piratas del Caribe\"?",
+    "opciones": [
+      "Brad Pitt",
+      "Orlando Bloom",
+      "Johnny Depp",
+      "Tom Cruise"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El primer film salió en 2003."
+  },
+  {
+    "id": "enamorados-n14",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Qué cantante colombiano colaboró con Shakira en \"La Bicicleta\"?",
+    "opciones": [
+      "Carlos Vives",
+      "Juanes",
+      "Maluma",
+      "J Balvin"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La canción es de 2016."
+  },
+  {
+    "id": "enamorados-n15",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Qué película de Pixar trata sobre juguetes que cobran vida?",
+    "opciones": [
+      "Ratatouille",
+      "Cars",
+      "Toy Story",
+      "Up"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Fue el primer largometraje totalmente animado por computadora."
+  },
+  {
+    "id": "enamorados-n16",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Cuántas notas musicales básicas tiene la escala (do, re, mi…)?",
+    "opciones": [
+      "7",
+      "12",
+      "5",
+      "8"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Do, re, mi, fa, sol, la y si."
+  },
+  {
+    "id": "enamorados-n17",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Qué cantante británico es autor de \"Shape of You\"?",
+    "opciones": [
+      "Harry Styles",
+      "Adele",
+      "Sam Smith",
+      "Ed Sheeran"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La canción es de 2017."
+  },
+  {
+    "id": "enamorados-n18",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el pez payaso padre en \"Buscando a Nemo\"?",
+    "opciones": [
+      "Marlin",
+      "Bruce",
+      "Dory",
+      "Gil"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Marlin cruza el océano para encontrar a su hijo."
+  },
+  {
+    "id": "enamorados-n19",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Quién dirigió \"Tiburón\" (1975)?",
+    "opciones": [
+      "George Lucas",
+      "Steven Spielberg",
+      "Ridley Scott",
+      "Alfred Hitchcock"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es considerada la primera película \"blockbuster\" de verano."
+  },
+  {
+    "id": "enamorados-n20",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "normal",
+    "pregunta": "¿Qué cantante es apodado \"El Rey del Rock and Roll\"?",
+    "opciones": [
+      "Johnny Cash",
+      "Elvis Presley",
+      "Chuck Berry",
+      "Little Richard"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Nació en Misisipi en 1935."
+  },
+  {
+    "id": "enamorados-h4",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "hard",
+    "pregunta": "¿Quién dirigió \"Pulp Fiction\"?",
+    "opciones": [
+      "David Fincher",
+      "Martin Scorsese",
+      "Guy Ritchie",
+      "Quentin Tarantino"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se estrenó en 1994."
+  },
+  {
+    "id": "enamorados-h5",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "hard",
+    "pregunta": "¿Qué compositor escribió la ópera \"La flauta mágica\"?",
+    "opciones": [
+      "Gioachino Rossini",
+      "Giuseppe Verdi",
+      "Wolfgang Amadeus Mozart",
+      "Ludwig van Beethoven"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Se estrenó en 1791."
+  },
+  {
+    "id": "enamorados-h6",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "hard",
+    "pregunta": "¿Qué actor interpretó al Joker en \"El caballero oscuro\" (2008)?",
+    "opciones": [
+      "Heath Ledger",
+      "Jack Nicholson",
+      "Joaquin Phoenix",
+      "Jared Leto"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Le valió un Óscar póstumo."
+  },
+  {
+    "id": "enamorados-h7",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "hard",
+    "pregunta": "¿Quién compuso el ballet \"El lago de los cisnes\"?",
+    "opciones": [
+      "Serguéi Prokófiev",
+      "Ígor Stravinski",
+      "Serguéi Rajmáninov",
+      "Piotr Ilich Chaikovski"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se estrenó en 1877."
+  },
+  {
+    "id": "enamorados-h8",
+    "categoria": "Música y cine",
+    "carta": "Los Enamorados",
+    "nivel": "hard",
+    "pregunta": "¿Cuál fue la primera película de Star Wars estrenada, en 1977?",
+    "opciones": [
+      "Episodio V: El imperio contraataca",
+      "Episodio VI: El regreso del Jedi",
+      "Episodio IV: Una nueva esperanza",
+      "Episodio I: La amenaza fantasma"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Se numeró como Episodio IV tras el estreno."
+  },
+  {
+    "id": "carro-n9",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos jugadores de un mismo equipo están en cancha en voleibol?",
+    "opciones": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Tres delanteros y tres zagueros."
+  },
+  {
+    "id": "carro-n10",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Qué deporte practica Rafael Nadal?",
+    "opciones": [
+      "Golf",
+      "Tenis",
+      "Fútbol",
+      "Pádel"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Ganó 22 torneos de Grand Slam."
+  },
+  {
+    "id": "carro-n11",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el deporte más practicado y seguido del mundo?",
+    "opciones": [
+      "Baloncesto",
+      "Críquet",
+      "Fútbol",
+      "Tenis"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Es el deporte con más aficionados a nivel global."
+  },
+  {
+    "id": "carro-n12",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Cuánto dura un partido de fútbol profesional sin contar el tiempo añadido?",
+    "opciones": [
+      "100 minutos",
+      "120 minutos",
+      "80 minutos",
+      "90 minutos"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Dos tiempos de 45 minutos."
+  },
+  {
+    "id": "carro-n13",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos aros tiene el símbolo olímpico?",
+    "opciones": [
+      "4",
+      "6",
+      "5",
+      "7"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Representan los cinco continentes unidos."
+  },
+  {
+    "id": "carro-n14",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿En qué deporte se usa el término \"jaque mate\"?",
+    "opciones": [
+      "Go",
+      "Damas",
+      "Póker",
+      "Ajedrez"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Significa que el rey no puede escapar."
+  },
+  {
+    "id": "carro-n15",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Qué velocista jamaiquino es considerado el hombre más rápido de la historia?",
+    "opciones": [
+      "Usain Bolt",
+      "Carl Lewis",
+      "Yohan Blake",
+      "Asafa Powell"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Posee el récord mundial de 100 m: 9,58 s."
+  },
+  {
+    "id": "carro-n16",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Qué selección ganó el Mundial de fútbol de 2010?",
+    "opciones": [
+      "Países Bajos",
+      "España",
+      "Alemania",
+      "Uruguay"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Venció a Países Bajos en la final, en Sudáfrica."
+  },
+  {
+    "id": "carro-n17",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿En qué deporte destacó Michael Jordan?",
+    "opciones": [
+      "Baloncesto",
+      "Golf",
+      "Fútbol americano",
+      "Béisbol"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Fue campeón de la NBA seis veces con los Chicago Bulls."
+  },
+  {
+    "id": "carro-n18",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Qué deporte se juega en un campo con hoyos y palos?",
+    "opciones": [
+      "Polo",
+      "Golf",
+      "Hockey",
+      "Críquet"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Gana quien completa el recorrido con menos golpes."
+  },
+  {
+    "id": "carro-n19",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Cuántos puntos vale un touchdown en el fútbol americano, sin contar la conversión?",
+    "opciones": [
+      "7",
+      "5",
+      "6",
+      "3"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Después se puede intentar sumar 1 o 2 puntos extra."
+  },
+  {
+    "id": "carro-n20",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el trofeo que recibe el campeón del Mundial de fútbol masculino?",
+    "opciones": [
+      "Copa del Mundo de la FIFA",
+      "Balón de Oro",
+      "Copa Libertadores",
+      "Copa América"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se entrega desde 1974."
+  },
+  {
+    "id": "carro-h4",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "hard",
+    "pregunta": "¿Qué país ganó el primer Mundial de fútbol, en 1930?",
+    "opciones": [
+      "Brasil",
+      "Italia",
+      "Argentina",
+      "Uruguay"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Venció a Argentina en la final y era el país anfitrión."
+  },
+  {
+    "id": "carro-h5",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "hard",
+    "pregunta": "¿Quién es el máximo medallista olímpico de la historia?",
+    "opciones": [
+      "Michael Phelps",
+      "Carl Lewis",
+      "Mark Spitz",
+      "Usain Bolt"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Ganó 28 medallas, 23 de ellas de oro."
+  },
+  {
+    "id": "carro-h6",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "hard",
+    "pregunta": "¿Cuántos torneos de Grand Slam hay en el calendario anual del tenis?",
+    "opciones": [
+      "3",
+      "5",
+      "4",
+      "6"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Abierto de Australia, Roland Garros, Wimbledon y US Open."
+  },
+  {
+    "id": "carro-h7",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "hard",
+    "pregunta": "¿En qué ciudad se celebraron los Juegos Olímpicos de 2016?",
+    "opciones": [
+      "Río de Janeiro",
+      "Tokio",
+      "Londres",
+      "Pekín"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Fueron los primeros Juegos celebrados en Sudamérica."
+  },
+  {
+    "id": "carro-h8",
+    "categoria": "Deportes",
+    "carta": "El Carro",
+    "nivel": "hard",
+    "pregunta": "¿Qué piloto de Fórmula 1 igualó a Michael Schumacher con siete títulos mundiales?",
+    "opciones": [
+      "Lewis Hamilton",
+      "Sebastian Vettel",
+      "Fernando Alonso",
+      "Ayrton Senna"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Lo logró en 2020."
+  },
+  {
+    "id": "ermitano-n9",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Quién es el dios griego del inframundo?",
+    "opciones": [
+      "Hermes",
+      "Dionisio",
+      "Ares",
+      "Hades"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Gobernaba el reino de los muertos."
+  },
+  {
+    "id": "ermitano-n10",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Qué héroe griego es famoso por sus doce trabajos?",
+    "opciones": [
+      "Perseo",
+      "Aquiles",
+      "Odiseo",
+      "Heracles (Hércules)"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los realizó como penitencia."
+  },
+  {
+    "id": "ermitano-n11",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Quién es la diosa griega del amor y la belleza?",
+    "opciones": [
+      "Afrodita",
+      "Deméter",
+      "Hestia",
+      "Hera"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Su equivalente romana es Venus."
+  },
+  {
+    "id": "ermitano-n12",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Qué dios nórdico es considerado el padre de todos los dioses?",
+    "opciones": [
+      "Odín",
+      "Baldr",
+      "Thor",
+      "Loki"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Es el dios de la sabiduría y la guerra."
+  },
+  {
+    "id": "ermitano-n13",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el caballo alado de la mitología griega?",
+    "opciones": [
+      "Pegaso",
+      "Bucéfalo",
+      "Rocinante",
+      "Sleipnir"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Nació de la sangre de Medusa."
+  },
+  {
+    "id": "ermitano-n14",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Qué filósofo griego fue discípulo de Platón y maestro de Alejandro Magno?",
+    "opciones": [
+      "Heráclito",
+      "Epicuro",
+      "Aristóteles",
+      "Sócrates"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Fundó el Liceo en Atenas."
+  },
+  {
+    "id": "ermitano-n15",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Qué dios egipcio representa al sol?",
+    "opciones": [
+      "Anubis",
+      "Osiris",
+      "Set",
+      "Ra"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Se representaba con cabeza de halcón y un disco solar."
+  },
+  {
+    "id": "ermitano-n16",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Qué criatura mitológica tiene cuerpo de león, alas y cabeza de águila?",
+    "opciones": [
+      "Esfinge",
+      "Hipogrifo",
+      "Quimera",
+      "Grifo"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Simbolizaba fuerza y vigilancia."
+  },
+  {
+    "id": "ermitano-n17",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Qué filósofo escribió \"El contrato social\"?",
+    "opciones": [
+      "Jean-Jacques Rousseau",
+      "Denis Diderot",
+      "Montesquieu",
+      "Voltaire"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se publicó en 1762."
+  },
+  {
+    "id": "ermitano-n18",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿A qué dios griego corresponde el Marte romano?",
+    "opciones": [
+      "Ares",
+      "Dionisio",
+      "Apolo",
+      "Hefesto"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Ambos son dioses de la guerra."
+  },
+  {
+    "id": "ermitano-n19",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿En qué isla griega se ubicaba el laberinto del Minotauro?",
+    "opciones": [
+      "Creta",
+      "Naxos",
+      "Samos",
+      "Rodas"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se asocia con el palacio de Cnosos."
+  },
+  {
+    "id": "ermitano-n20",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama la diosa romana equivalente a Afrodita?",
+    "opciones": [
+      "Minerva",
+      "Diana",
+      "Venus",
+      "Juno"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Es la diosa romana del amor."
+  },
+  {
+    "id": "ermitano-h4",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "hard",
+    "pregunta": "¿Qué filósofo escribió \"Crítica de la razón pura\"?",
+    "opciones": [
+      "Immanuel Kant",
+      "Georg Hegel",
+      "David Hume",
+      "Baruch Spinoza"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se publicó en 1781."
+  },
+  {
+    "id": "ermitano-h5",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "hard",
+    "pregunta": "¿Qué escuela filosófica fundó Zenón de Citio?",
+    "opciones": [
+      "Estoicismo",
+      "Escepticismo",
+      "Cinismo",
+      "Epicureísmo"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se llama así por el pórtico (stoa) de Atenas donde enseñaba."
+  },
+  {
+    "id": "ermitano-h6",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "hard",
+    "pregunta": "¿Qué titán robó el fuego para entregárselo a los humanos?",
+    "opciones": [
+      "Atlas",
+      "Cronos",
+      "Prometeo",
+      "Epimeteo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Zeus lo castigó encadenándolo a una roca."
+  },
+  {
+    "id": "ermitano-h7",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "hard",
+    "pregunta": "¿Qué filósofo es autor de \"El ser y la nada\"?",
+    "opciones": [
+      "Albert Camus",
+      "Martin Heidegger",
+      "Simone de Beauvoir",
+      "Jean-Paul Sartre"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es una obra clave del existencialismo, de 1943."
+  },
+  {
+    "id": "ermitano-h8",
+    "categoria": "Filosofía y mitología",
+    "carta": "El Ermitaño",
+    "nivel": "hard",
+    "pregunta": "¿Cómo se llama el río del olvido en la mitología griega?",
+    "opciones": [
+      "Aqueronte",
+      "Cocito",
+      "Leteo",
+      "Estigia"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Beber de sus aguas hacía olvidar la vida anterior."
+  },
+  {
+    "id": "rueda-n9",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el protagonista de la saga \"The Legend of Zelda\"?",
+    "opciones": [
+      "Link",
+      "Ganon",
+      "Zelda",
+      "Navi"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Zelda es la princesa, no el héroe."
+  },
+  {
+    "id": "rueda-n10",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Qué empresa creó la consola PlayStation?",
+    "opciones": [
+      "Microsoft",
+      "Sega",
+      "Nintendo",
+      "Sony"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La primera PlayStation salió en 1994 en Japón."
+  },
+  {
+    "id": "rueda-n11",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el villano principal de la saga Super Mario?",
+    "opciones": [
+      "Ganondorf",
+      "Wario",
+      "Donkey Kong",
+      "Bowser"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es el rey de los Koopas."
+  },
+  {
+    "id": "rueda-n12",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Quién es el superhéroe conocido como el \"Hombre de Hierro\"?",
+    "opciones": [
+      "Bruce Banner",
+      "Steve Rogers",
+      "Thor",
+      "Tony Stark"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es un personaje de Marvel."
+  },
+  {
+    "id": "rueda-n13",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el protagonista de la serie \"Dragon Ball\"?",
+    "opciones": [
+      "Vegeta",
+      "Gohan",
+      "Goku",
+      "Krilin"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Creado por Akira Toriyama."
+  },
+  {
+    "id": "rueda-n14",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Qué empresa desarrolló el videojuego Fortnite?",
+    "opciones": [
+      "Epic Games",
+      "Blizzard",
+      "Riot Games",
+      "Valve"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Salió en 2017."
+  },
+  {
+    "id": "rueda-n15",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama la serie animada de una familia amarilla de Springfield?",
+    "opciones": [
+      "South Park",
+      "Padre de familia",
+      "Los Simpson",
+      "Futurama"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Se emite desde 1989."
+  },
+  {
+    "id": "rueda-n16",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el reino donde viven Elsa y Anna en \"Frozen\"?",
+    "opciones": [
+      "Corona",
+      "Atlántica",
+      "Arendelle",
+      "Agrabah"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La película se estrenó en 2013."
+  },
+  {
+    "id": "rueda-n17",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Qué personaje de anime es un ninja rubio que sueña con ser Hokage?",
+    "opciones": [
+      "Naruto Uzumaki",
+      "Monkey D. Luffy",
+      "Sasuke Uchiha",
+      "Kakashi Hatake"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Es el protagonista de la serie \"Naruto\"."
+  },
+  {
+    "id": "rueda-n18",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el protagonista de \"One Piece\"?",
+    "opciones": [
+      "Monkey D. Luffy",
+      "Sanji",
+      "Portgas D. Ace",
+      "Roronoa Zoro"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Sueña con ser el Rey de los Piratas."
+  },
+  {
+    "id": "rueda-n19",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama la estrella de mar mejor amiga de Bob Esponja?",
+    "opciones": [
+      "Calamardo",
+      "Arenita",
+      "Patricio Estrella",
+      "Don Cangrejo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Vive bajo una roca en Fondo de Bikini."
+  },
+  {
+    "id": "rueda-n20",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "normal",
+    "pregunta": "¿Cómo se llama el gorila que lanza barriles en el videojuego clásico de 1981?",
+    "opciones": [
+      "Diddy Kong",
+      "Donkey Kong",
+      "Bowser",
+      "Wario"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Fue el debut de Mario, entonces llamado Jumpman."
+  },
+  {
+    "id": "rueda-h4",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "hard",
+    "pregunta": "¿Qué estudio desarrolló el videojuego \"The Witcher 3\"?",
+    "opciones": [
+      "Bethesda",
+      "Ubisoft",
+      "BioWare",
+      "CD Projekt Red"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El juego se lanzó en 2015."
+  },
+  {
+    "id": "rueda-h5",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "hard",
+    "pregunta": "¿En qué año se estrenó la primera película de Harry Potter, \"La piedra filosofal\"?",
+    "opciones": [
+      "2001",
+      "1999",
+      "2003",
+      "2005"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Se estrenó en noviembre de 2001."
+  },
+  {
+    "id": "rueda-h6",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "hard",
+    "pregunta": "¿Quién es el creador de Mario y The Legend of Zelda?",
+    "opciones": [
+      "Satoru Iwata",
+      "Shigeru Miyamoto",
+      "Masahiro Sakurai",
+      "Hideo Kojima"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Es uno de los diseñadores más influyentes de Nintendo."
+  },
+  {
+    "id": "rueda-h7",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "hard",
+    "pregunta": "¿Cómo se llama el protagonista de la saga de videojuegos Halo?",
+    "opciones": [
+      "Doomguy",
+      "Samus Aran",
+      "Marcus Fenix",
+      "Jefe Maestro (Master Chief)"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es un supersoldado conocido como Spartan-117."
+  },
+  {
+    "id": "rueda-h8",
+    "categoria": "Cultura pop y videojuegos",
+    "carta": "La Rueda de la Fortuna",
+    "nivel": "hard",
+    "pregunta": "¿Qué consola de Nintendo introdujo el control por movimiento en 2006?",
+    "opciones": [
+      "Nintendo DS",
+      "Wii",
+      "GameCube",
+      "Switch"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Fue un enorme éxito de ventas."
+  },
+  {
+    "id": "mundo-n9",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es la capital de Argentina?",
+    "opciones": [
+      "Rosario",
+      "Córdoba",
+      "Buenos Aires",
+      "Montevideo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Montevideo es la capital de Uruguay."
+  },
+  {
+    "id": "mundo-n10",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el océano más grande del mundo?",
+    "opciones": [
+      "Atlántico",
+      "Índico",
+      "Océano Pacífico",
+      "Ártico"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Ocupa cerca de un tercio de la superficie del planeta."
+  },
+  {
+    "id": "mundo-n11",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿En qué continente se encuentra Egipto?",
+    "opciones": [
+      "Asia",
+      "Europa",
+      "Oceanía",
+      "África"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Una pequeña parte, la península del Sinaí, está en Asia."
+  },
+  {
+    "id": "mundo-n12",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es la capital de Italia?",
+    "opciones": [
+      "Roma",
+      "Nápoles",
+      "Venecia",
+      "Milán"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Es también conocida como la Ciudad Eterna."
+  },
+  {
+    "id": "mundo-n13",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Qué río atraviesa la ciudad de París?",
+    "opciones": [
+      "El Danubio",
+      "El Rin",
+      "El Támesis",
+      "El Sena"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Lo cruzan decenas de puentes."
+  },
+  {
+    "id": "mundo-n14",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es la capital de México?",
+    "opciones": [
+      "Puebla",
+      "Monterrey",
+      "Ciudad de México",
+      "Guadalajara"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Se construyó sobre la antigua Tenochtitlan."
+  },
+  {
+    "id": "mundo-n15",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Qué país tiene forma de bota?",
+    "opciones": [
+      "Portugal",
+      "Grecia",
+      "Italia",
+      "Chile"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Su silueta es de las más reconocibles."
+  },
+  {
+    "id": "mundo-n16",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es el país más pequeño del mundo?",
+    "opciones": [
+      "Ciudad del Vaticano",
+      "Liechtenstein",
+      "San Marino",
+      "Mónaco"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Mide unas 44 hectáreas."
+  },
+  {
+    "id": "mundo-n17",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿En qué país se encuentra Machu Picchu?",
+    "opciones": [
+      "Perú",
+      "Ecuador",
+      "Bolivia",
+      "Chile"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Está en la región de Cusco."
+  },
+  {
+    "id": "mundo-n18",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Cuál es la capital de Brasil?",
+    "opciones": [
+      "Río de Janeiro",
+      "São Paulo",
+      "Salvador",
+      "Brasilia"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Fue inaugurada en 1960."
+  },
+  {
+    "id": "mundo-n19",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿Qué mar baña la costa norte de Colombia?",
+    "opciones": [
+      "Océano Pacífico",
+      "Mar Báltico",
+      "Mar Mediterráneo",
+      "Mar Caribe"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Cartagena y Santa Marta están sobre este mar."
+  },
+  {
+    "id": "mundo-n20",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "normal",
+    "pregunta": "¿En qué ciudad se encuentra la estatua del Cristo Redentor?",
+    "opciones": [
+      "Lima",
+      "Río de Janeiro",
+      "São Paulo",
+      "Buenos Aires"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Está sobre el cerro del Corcovado."
+  },
+  {
+    "id": "mundo-h4",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es el río más largo de África?",
+    "opciones": [
+      "El Congo",
+      "El Zambeze",
+      "El Níger",
+      "El Nilo"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Recorre unos 6.600 km."
+  },
+  {
+    "id": "mundo-h5",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es la capital de Canadá?",
+    "opciones": [
+      "Toronto",
+      "Ottawa",
+      "Vancouver",
+      "Montreal"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Toronto es la ciudad más grande, pero no la capital."
+  },
+  {
+    "id": "mundo-h6",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "hard",
+    "pregunta": "¿Cuál es la capital de Turquía?",
+    "opciones": [
+      "Ankara",
+      "Esmirna",
+      "Bursa",
+      "Estambul"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Estambul es la ciudad más grande, pero la capital es Ankara."
+  },
+  {
+    "id": "mundo-h7",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "hard",
+    "pregunta": "¿Qué desierto se encuentra en el norte de Chile?",
+    "opciones": [
+      "Desierto del Namib",
+      "Desierto de Kalahari",
+      "Desierto de Atacama",
+      "Desierto de Gobi"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Es uno de los lugares más áridos del planeta."
+  },
+  {
+    "id": "mundo-h8",
+    "categoria": "Geografía",
+    "carta": "El Mundo",
+    "nivel": "hard",
+    "pregunta": "¿De qué país africano es capital Nairobi?",
+    "opciones": [
+      "Uganda",
+      "Tanzania",
+      "Etiopía",
+      "Kenia"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Es una de las ciudades más grandes de África oriental."
+  }
+]

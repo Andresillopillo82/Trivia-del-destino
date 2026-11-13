@@ -1,0 +1,97 @@
+@import '@fontsource-variable/cinzel';
+@import '@fontsource-variable/inter';
+@import 'tailwindcss';
+
+@theme {
+  --color-noche: #0b0a10;
+  --color-noche-2: #14111d;
+  --color-noche-3: #1d1829;
+  --color-violeta: #5b2a86;
+  --color-violeta-claro: #8b5cf6;
+  --color-lavanda: #c4b5fd;
+  --color-oro: #d4af37;
+  --color-oro-claro: #f1d77a;
+  --color-oro-oscuro: #9c7c1f;
+  --color-pergamino: #ede6f6;
+  --color-niebla: #a89fbb;
+  --color-acierto: #4ade80;
+  --color-error: #f87171;
+
+  --font-display: 'Cinzel Variable', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --shadow-dorado: 0 0 0 1px rgb(212 175 55 / 0.35), 0 0 24px rgb(212 175 55 / 0.18);
+  --shadow-mistico: 0 10px 40px -10px rgb(91 42 134 / 0.6);
+
+  --animate-brillo: brillo 3.5s ease-in-out infinite;
+}
+
+@keyframes brillo {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    overflow-x: clip;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-noche font-sans text-pergamino antialiased;
+    min-height: 100dvh;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgb(91 42 134 / 0.35), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 50% 110%, rgb(212 175 55 / 0.08), transparent 70%);
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-wide;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-oro-claro);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  ::selection {
+    background: rgb(139 92 246 / 0.45);
+  }
+}
+
+@layer components {
+  /* Texto con degradado dorado para títulos */
+  .texto-oro {
+    background: linear-gradient(180deg, var(--color-oro-claro) 0%, var(--color-oro) 55%, var(--color-oro-oscuro) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Panel con borde dorado tenue */
+  .panel {
+    @apply rounded-2xl border border-oro/25 bg-noche-2/80 backdrop-blur-sm;
+    box-shadow: var(--shadow-mistico);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

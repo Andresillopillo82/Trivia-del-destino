@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 512 512">
+  <!-- Misma carta que public/icon.svg, reducida para la zona segura del ícono adaptativo (66 de 108 dp). -->
+  <defs>
+    <linearGradient id="carta" x1="0" y1="76" x2="0" y2="436" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5B2A86"/>
+      <stop offset="1" stop-color="#1a1226"/>
+    </linearGradient>
+    <linearGradient id="oro" x1="146" y1="76" x2="366" y2="436" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F1D77A"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#9C7C1F"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(256 256) scale(0.6) translate(-256 -256)">
+    <rect x="146" y="76" width="220" height="360" rx="18" fill="url(#carta)" stroke="url(#oro)" stroke-width="10"/>
+    <rect x="164" y="94" width="184" height="324" rx="10" fill="none" stroke="#D4AF37" stroke-opacity="0.6" stroke-width="3"/>
+    <polygon points="256,150 271,221 336,196 291,251 336,306 271,281 256,352 241,281 176,306 221,251 176,196 241,221" fill="#D4AF37" fill-opacity="0.18" stroke="#D4AF37" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="256" cy="251" r="44" fill="#0B0A10" stroke="#D4AF37" stroke-width="6"/>
+    <path d="M222 251 Q256 222 290 251 Q256 280 222 251 Z" fill="none" stroke="#F1D77A" stroke-width="5"/>
+    <circle cx="256" cy="251" r="12" fill="#8B5CF6" stroke="#F1D77A" stroke-width="3"/>
+    <path d="M256 112 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5z" fill="#F1D77A"/>
+    <path d="M256 362 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5z" fill="#F1D77A"/>
+  </g>
+</svg>

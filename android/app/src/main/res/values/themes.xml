@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- La interfaz es Compose; este tema solo fija el fondo oscuro de la ventana. -->
+    <style name="Theme.Trivia" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/noche</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Pantalla de inicio (Splash Screen API): fondo noche con la carta del ícono. -->
+    <style name="Theme.Trivia.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/noche</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.Trivia</item>
+    </style>
+</resources>

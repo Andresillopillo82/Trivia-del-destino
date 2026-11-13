@@ -1,0 +1,33 @@
+node_modules
+dist
+dev-dist
+.env
+.env.local
+.env.*.local
+.firebase
+.firebaserc
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+*.log
+.DS_Store
+coverage
+
+# Android
+android/.gradle
+android/.kotlin
+android/.idea
+/.idea
+android/build
+android/app/build
+android/local.properties
+android/app/google-services.json
+android/captures
+*.iml
+*.keystore
+*.jks
+android/arte/svg
+
+# Firma release (ver android/README.md)
+android/keystore.properties
+capturas-e2e

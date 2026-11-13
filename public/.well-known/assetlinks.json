@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.triviadeldestino.app",
+      "sha256_cert_fingerprints": [
+        "80:52:E2:7D:AF:02:71:9C:E4:20:22:27:96:7B:4B:DA:FD:D3:BB:4C:31:13:02:D2:6B:03:AA:48:21:08:12:1F",
+        "E5:40:32:50:1F:B0:51:95:B2:91:72:49:80:63:A5:5E:78:CF:78:A4:0F:8D:9D:AC:D1:8D:92:AC:F5:53:F4:AB"
+      ]
+    }
+  }
+]

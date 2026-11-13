@@ -1,0 +1,529 @@
+rules_version = '2';
+
+// Reglas de Trivia del Destino.
+// La clasificación se calcula en los clientes a partir de los eventos (answers y challenges);
+// estas reglas garantizan que cada jugador solo escriba sus propios eventos, una vez y en el
+// momento correcto. Lo que no se puede blindar sin Cloud Functions está documentado en el README.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---------- utilidades ----------
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function me() {
+      return request.auth.uid;
+    }
+
+    function data() {
+      return request.resource.data;
+    }
+
+    // Solo cambian las claves indicadas.
+    function onlyChanges(keys) {
+      return data().diff(resource.data).affectedKeys().hasOnly(keys);
+    }
+
+    function validText(s, min, max) {
+      return s is string && s.size() >= min && s.size() <= max;
+    }
+
+    function validCode(code) {
+      return code.matches('^[A-HJ-NP-Z2-9]{5}$');
+    }
+
+    // Los bots tienen uid "bot-…"; un uid de Firebase Auth nunca empieza así.
+    function isBotUid(uid) {
+      return uid.matches('^bot-[a-z0-9-]{1,30}$');
+    }
+
+    function groupPath(code) {
+      return /databases/$(database)/documents/groups/$(code);
+    }
+
+    function groupData(code) {
+      return get(groupPath(code)).data;
+    }
+
+    // Administra quien creó el grupo o quien se sumó como co-administrador con la clave.
+    function isAdmin(code) {
+      return groupData(code).adminUid == me()
+        || exists(/databases/$(database)/documents/groups/$(code)/admins/$(me()));
+    }
+
+    function adminKeyPath(code) {
+      return /databases/$(database)/documents/groups/$(code)/secretos/admin;
+    }
+
+    function isPlayer(code, uid) {
+      return exists(/databases/$(database)/documents/groups/$(code)/players/$(uid));
+    }
+
+    function isMember(code) {
+      return isPlayer(code, me()) || isAdmin(code);
+    }
+
+    // Día de temporada. Misma fórmula que src/game/day.ts (seasonDay).
+    function currentDay(g) {
+      return int((request.time.toMillis() - g.fechaInicio.toMillis()) / 86400000) + g.dayOffset;
+    }
+
+    function seasonActive(g) {
+      return g.estado == 'activo' && currentDay(g) < 7;
+    }
+
+    // El temporizador empieza 3 s después de registrar en el servidor que se abrió la pregunta
+    // (cuenta atrás; gameConfig.pausaRevelacionMs) y dura 20 s. Ventana: 3 + 20 s + margen de red.
+    function withinAnswerWindow(startedAt) {
+      return request.time <= startedAt + duration.value(35, 's');
+    }
+
+    // El tiempo declarado no puede ser mucho menor que el real: se descuentan la pausa
+    // de revelación (3 s) y un margen de red (5 s).
+    function plausibleTime(startedAt) {
+      return data().tiempoMs >= request.time.toMillis() - startedAt.toMillis() - 8000;
+    }
+
+    function validResult() {
+      return data().correcta is bool
+        && data().tiempoMs is int && data().tiempoMs >= 0 && data().tiempoMs <= 20000
+        && (data().opcion == null || (data().opcion is int && data().opcion >= 0 && data().opcion <= 3));
+    }
+
+    // Resultado por tiempo agotado: se puede registrar en cualquier momento.
+    function isTimeoutResult() {
+      return data().opcion == null && data().correcta == false && data().tiempoMs == 20000;
+    }
+
+    // ---------- perfil del usuario ----------
+
+    match /users/{uid} {
+      allow read: if signedIn() && uid == me();
+      allow create, update: if signedIn() && uid == me()
+        && validText(data().apodo, 2, 40)
+        && validText(data().avatar, 1, 20)
+        && (data().grupoActual == null || (data().grupoActual is string && validCode(data().grupoActual)));
+      allow delete: if false;
+    }
+
+    // ---------- grupos ----------
+
+    match /groups/{code} {
+      // Cualquiera autenticado puede consultar un grupo por su código (para unirse), pero no listarlos.
+      allow get: if signedIn();
+      allow list: if false;
+
+      allow create: if signedIn() && validCode(code)
+        && data().adminUid == me()
+        && validText(data().nombre, 3, 60)
+        && data().adminJuega is bool
+        && data().dayOffset == 0
+        && data().estado == 'activo'
+        && data().temporada == 1
+        && data().campeon == null
+        && data().titulos == null
+        && data().creadoEn == request.time
+        && data().fechaInicio is timestamp
+        && data().fechaInicio <= request.time
+        && data().fechaInicio > request.time - duration.value(1, 'd');
+
+      // Solo los administradores modifican la configuración (incluido dayOffset); nunca cambia el creador.
+      allow update: if signedIn() && isAdmin(code)
+        && data().adminUid == resource.data.adminUid
+        && data().creadoEn == resource.data.creadoEn
+        && validText(data().nombre, 3, 60)
+        && data().adminJuega is bool
+        && data().dayOffset is int && data().dayOffset >= -1000 && data().dayOffset <= 1000
+        && data().estado in ['activo', 'finalizado']
+        && data().temporada is int
+        && data().fechaInicio is timestamp
+        && data().fechaInicio <= request.time;
+
+      allow delete: if signedIn() && isAdmin(code);
+
+      // ---------- clave de administración ----------
+      // Se crea junto con el grupo. Ningún cliente la lee salvo quien creó el grupo; las reglas
+      // sí pueden leerla con get() para verificar a un co-administrador.
+
+      match /secretos/{docId} {
+        allow get: if signedIn() && docId == 'admin' && groupData(code).adminUid == me();
+        allow list, update: if false;
+        allow create: if signedIn() && docId == 'admin'
+          && !exists(groupPath(code))
+          && getAfter(groupPath(code)).data.adminUid == me()
+          && data().keys().hasOnly(['clave'])
+          && data().clave is string && data().clave.matches('^[A-HJ-NP-Z2-9]{8}$');
+        allow delete: if signedIn() && isAdmin(code);
+      }
+
+      // ---------- co-administradores ----------
+      // Quien conoce el código y la clave administra desde otro dispositivo (p. ej. la PC del stand)
+      // sin jugar. El documento guarda la clave para que las reglas la comparen, así que solo lo
+      // leen el propio co-administrador y los administradores.
+
+      match /admins/{uid} {
+        allow read: if signedIn() && (uid == me() || isAdmin(code));
+        allow update: if false;
+        allow create: if signedIn() && uid == me()
+          && data().keys().hasOnly(['clave', 'unidoEn'])
+          && data().unidoEn == request.time
+          && data().clave == get(adminKeyPath(code)).data.clave
+          && getAfter(/databases/$(database)/documents/users/$(me())).data.grupoActual == code;
+        allow delete: if signedIn() && (uid == me() || isAdmin(code));
+      }
+
+      // ---------- jugadores ----------
+
+      match /players/{uid} {
+        allow read: if signedIn() && isMember(code);
+
+        // Un humano se une a sí mismo y en el mismo lote apunta su perfil a este grupo
+        // (así un jugador solo está en un grupo a la vez).
+        allow create: if signedIn() && uid == me()
+          && existsAfter(groupPath(code))
+          && data().esBot == false
+          && validText(data().apodo, 2, 40)
+          && validText(data().avatar, 1, 20)
+          && data().unidoEn == request.time
+          && getAfter(/databases/$(database)/documents/users/$(me())).data.grupoActual == code;
+
+        allow update: if signedIn() && uid == me()
+          && onlyChanges(['apodo', 'avatar'])
+          && validText(data().apodo, 2, 40)
+          && validText(data().avatar, 1, 20);
+
+        // El administrador gestiona los bots del modo demo.
+        allow create, update: if signedIn() && isBotUid(uid) && isAdmin(code)
+          && data().esBot == true
+          && validText(data().apodo, 2, 40)
+          && validText(data().avatar, 1, 20);
+
+        // Uno puede salir del grupo; el administrador puede expulsar o borrar bots.
+        allow delete: if signedIn() && (uid == me() || isAdmin(code));
+      }
+
+      // ---------- respuestas diarias: id = {uid}_{dia}_{n} (3 preguntas por día, n = 0, 1, 2) ----------
+      // Ciclo: "carta" (volteada, se puede usar el comodín) → "abierta" (se ve la pregunta y corre
+      // el tiempo) → "cerrada". Cada paso ocurre una sola vez.
+
+      match /answers/{answerId} {
+        function answerPath(uid, dia, n) {
+          return /databases/$(database)/documents/groups/$(code)/answers/$(uid + '_' + string(dia) + '_' + string(n));
+        }
+
+        function usedComodin(uid, dia, n) {
+          return exists(answerPath(uid, dia, n)) && get(answerPath(uid, dia, n)).data.comodin == true;
+        }
+
+        // Aciertos en las preguntas anteriores del mismo día (gameConfig.aciertosParaRetar = 2).
+        function previousCorrect(uid, dia, n) {
+          return (n > 0 && get(answerPath(uid, dia, 0)).data.correcta == true ? 1 : 0)
+            + (n > 1 && get(answerPath(uid, dia, 1)).data.correcta == true ? 1 : 0);
+        }
+
+        function sameDayActive() {
+          return seasonActive(groupData(code)) && resource.data.dia == currentDay(groupData(code));
+        }
+
+        allow read: if signedIn() && isMember(code);
+
+        // Voltear una carta: la 1.ª del día siempre; las siguientes, con la anterior ya respondida.
+        // Si ya existe, esto es un update y se rechaza: no se puede volver a sacar esa carta.
+        allow create: if signedIn()
+          && data().n is int && data().n >= 0 && data().n <= 2
+          && answerId == me() + '_' + string(data().dia) + '_' + string(data().n)
+          && data().uid == me()
+          && isPlayer(code, me())
+          && seasonActive(groupData(code))
+          && data().dia == currentDay(groupData(code))
+          && data().keys().hasOnly(['uid', 'dia', 'n', 'preguntaId', 'carta', 'comodin', 'estado', 'opcion', 'correcta', 'tiempoMs', 'retoPara', 'cartaEn', 'reveladoEn'])
+          && (data().n == 0 || get(answerPath(me(), data().dia, data().n - 1)).data.estado == 'cerrada')
+          && data().preguntaId == null
+          && validText(data().carta, 1, 20)
+          && data().comodin == false
+          && data().estado == 'carta'
+          && data().opcion == null
+          && data().correcta == false
+          && data().tiempoMs == 0
+          && data().retoPara == null
+          && data().cartaEn == request.time
+          && data().reveladoEn == null;
+
+        // Comodín: cambiar la carta (por otra) antes de ver la pregunta, una vez en todo el día.
+        allow update: if signedIn() && resource.data.uid == me()
+          && resource.data.estado == 'carta'
+          && sameDayActive()
+          && onlyChanges(['carta', 'comodin'])
+          && data().comodin == true
+          && validText(data().carta, 1, 20)
+          && data().carta != resource.data.carta
+          && !usedComodin(me(), resource.data.dia, 0)
+          && !usedComodin(me(), resource.data.dia, 1)
+          && !usedComodin(me(), resource.data.dia, 2);
+
+        // "Ver la pregunta": se fija la pregunta y el tiempo corre desde la hora del servidor.
+        allow update: if signedIn() && resource.data.uid == me()
+          && resource.data.estado == 'carta'
+          && sameDayActive()
+          && data().estado == 'abierta'
+          && onlyChanges(['estado', 'preguntaId', 'reveladoEn'])
+          && validText(data().preguntaId, 1, 40)
+          && data().reveladoEn == request.time;
+
+        // Cerrar la respuesta una sola vez: dentro del tiempo, o por tiempo agotado.
+        allow update: if signedIn() && resource.data.uid == me()
+          && resource.data.estado == 'abierta'
+          && data().estado == 'cerrada'
+          && onlyChanges(['estado', 'opcion', 'correcta', 'tiempoMs', 'respondidoEn'])
+          && data().respondidoEn == request.time
+          && validResult()
+          && (isTimeoutResult()
+              || (withinAnswerWindow(resource.data.reveladoEn) && plausibleTime(resource.data.reveladoEn)));
+
+        // Marcar a quién se retó: solo en la respuesta que completó el 2.º acierto del día (así hay
+        // un único reto por día), junto con la creación del reto en el mismo lote.
+        allow update: if signedIn() && resource.data.uid == me()
+          && resource.data.estado == 'cerrada'
+          && resource.data.correcta == true
+          && resource.data.retoPara == null
+          && onlyChanges(['retoPara'])
+          && data().retoPara is string
+          && previousCorrect(me(), resource.data.dia, resource.data.n) == 1
+          && getAfter(/databases/$(database)/documents/groups/$(code)/challenges/$(data().retoPara + '_' + string(resource.data.dia))).data.de == me();
+
+        // El administrador escribe las respuestas de los bots (completas, una sola vez).
+        allow create: if signedIn() && isBotUid(data().uid) && isAdmin(code)
+          && data().n is int && data().n >= 0 && data().n <= 2
+          && answerId == data().uid + '_' + string(data().dia) + '_' + string(data().n)
+          && data().estado == 'cerrada';
+
+        allow delete: if signedIn() && isAdmin(code);
+      }
+
+      // ---------- retos: id = {para}_{dia} (máximo uno recibido por día) ----------
+      // Si el retado lo devuelve, la hora del servidor decide: con ms % 100 < 30 (30 %) le toca
+      // responder al retador; si no, el retado responde además la pregunta extra {para}_{dia}_2.
+
+      match /challenges/{challengeId} {
+        function challengePath(id) {
+          return /databases/$(database)/documents/groups/$(code)/challenges/$(id);
+        }
+
+        function baseOf(c) {
+          return challengePath(c.para + '_' + string(c.dia));
+        }
+
+        function answerOf(uid, dia, n) {
+          return /databases/$(database)/documents/groups/$(code)/answers/$(uid + '_' + string(dia) + '_' + string(n));
+        }
+
+        // Misma cuenta que devolucionExitosa (src/game/challenges.ts), gameConfig.porcentajeDevolucion.
+        function returnSucceeded(c) {
+          return c.devueltoEn.toMillis() % 100 < 30;
+        }
+
+        // Quién debe responder: el retador si se lo devolvieron con éxito; si no, el retado.
+        function responsable(c) {
+          return c.extra == false && c.devueltoEn != null && returnSucceeded(c) ? c.de : c.para;
+        }
+
+        // La pregunta extra solo cuenta si la devolución del reto principal falló.
+        function required(c) {
+          return c.extra == false
+            || (get(baseOf(c)).data.devueltoEn != null && !returnSucceeded(get(baseOf(c)).data));
+        }
+
+        allow read: if signedIn() && isMember(code);
+
+        // Lanzar un reto: requiere la respuesta que lo desbloqueó (2.º acierto) y marcarla en el mismo lote.
+        allow create: if signedIn()
+          && data().de == me()
+          && data().para != me()
+          && challengeId == data().para + '_' + string(data().dia)
+          && seasonActive(groupData(code))
+          && isPlayer(code, data().para)
+          && data().keys().hasOnly(['de', 'para', 'dia', 'preguntaId', 'carta', 'estado', 'extra', 'devueltoEn', 'respuestaN', 'correcta', 'tiempoMs', 'creadoEn'])
+          && validText(data().preguntaId, 1, 40)
+          && validText(data().carta, 1, 20)
+          && data().estado == 'pendiente'
+          && data().extra == false
+          && data().devueltoEn == null
+          && data().correcta == null
+          && data().tiempoMs == null
+          && data().creadoEn == request.time
+          && data().respuestaN is int
+          && getAfter(answerOf(me(), data().dia, data().respuestaN)).data.retoPara == data().para
+          && get(answerOf(me(), data().dia, data().respuestaN)).data.correcta == true;
+
+        // Devolver: solo el retado, antes de abrirlo y una sola vez. En el mismo lote se crea la
+        // pregunta extra, así la segunda pregunta existe antes de saber el resultado.
+        allow update: if signedIn() && resource.data.para == me()
+          && resource.data.extra == false
+          && resource.data.estado == 'pendiente'
+          && resource.data.devueltoEn == null
+          && seasonActive(groupData(code))
+          && data().estado == 'devuelto'
+          && onlyChanges(['estado', 'devueltoEn'])
+          && data().devueltoEn == request.time
+          && getAfter(challengePath(challengeId + '_2')).data.extra == true;
+
+        allow create: if signedIn()
+          && data().para == me()
+          && challengeId == data().para + '_' + string(data().dia) + '_2'
+          && data().keys().hasOnly(['de', 'para', 'dia', 'preguntaId', 'carta', 'estado', 'extra', 'devueltoEn', 'correcta', 'tiempoMs', 'creadoEn'])
+          && validText(data().preguntaId, 1, 40)
+          && validText(data().carta, 1, 20)
+          && data().estado == 'pendiente'
+          && data().extra == true
+          && data().devueltoEn == null
+          && data().correcta == null
+          && data().tiempoMs == null
+          && data().creadoEn == request.time
+          && data().de == get(baseOf(data())).data.de
+          && data().preguntaId != get(baseOf(data())).data.preguntaId
+          && getAfter(baseOf(data())).data.devueltoEn == request.time;
+
+        // Quien debe responder abre la pregunta (empieza su temporizador)…
+        allow update: if signedIn()
+          && resource.data.estado in ['pendiente', 'devuelto']
+          && responsable(resource.data) == me()
+          && required(resource.data)
+          && data().estado == 'abierto'
+          && onlyChanges(['estado', 'abiertoEn'])
+          && data().abiertoEn == request.time;
+
+        // …y la resuelve una sola vez, dentro del tiempo o por tiempo agotado.
+        allow update: if signedIn()
+          && resource.data.estado == 'abierto'
+          && responsable(resource.data) == me()
+          && data().estado == 'resuelto'
+          && onlyChanges(['estado', 'opcion', 'correcta', 'tiempoMs', 'resueltoEn'])
+          && data().resueltoEn == request.time
+          && validResult()
+          && (isTimeoutResult()
+              || (withinAnswerWindow(resource.data.abiertoEn) && plausibleTime(resource.data.abiertoEn)));
+
+        // El administrador lanza los retos de los bots: solo crear, nunca pisar un reto existente
+        // (el id {para}_{dia} sigue garantizando un reto recibido por día).
+        allow create: if signedIn() && isAdmin(code)
+          && isBotUid(data().de)
+          && data().para != data().de
+          && isPlayer(code, data().para)
+          && challengeId == data().para + '_' + string(data().dia)
+          && data().extra == false
+          && data().devueltoEn == null;
+
+        // …y resuelve una sola vez las preguntas de reto que le tocan a un bot (recibidas o devueltas).
+        allow update: if signedIn() && isAdmin(code)
+          && isBotUid(responsable(resource.data))
+          && resource.data.estado != 'resuelto'
+          && data().estado == 'resuelto'
+          && onlyChanges(['estado', 'opcion', 'correcta', 'tiempoMs', 'resueltoEn']);
+
+        allow delete: if signedIn() && isAdmin(code);
+      }
+    }
+
+    // ---------- Partida Rápida: salas temporales, independientes de los grupos ----------
+    // Los resultados (contadores) los escribe cada cliente: un usuario técnico podría manipularlos.
+    // Es aceptable para una partida casual sin clasificaciones guardadas (ver README).
+
+    function quickRoomPath(code) {
+      return /databases/$(database)/documents/quickRooms/$(code);
+    }
+
+    function validQuickRoom() {
+      return data().keys().hasOnly(['hostUid', 'hostPlays', 'status', 'round', 'seed', 'config', 'evitar', 'createdAt', 'startedAt', 'expiresAt'])
+        && data().status in ['lobby', 'playing', 'finished']
+        && data().hostPlays is bool
+        && data().round is int && data().round >= 1
+        && data().seed is int && data().seed >= 0 && data().seed <= 4294967295
+        && data().config is map && data().config.size() <= 20
+        && data().evitar is list && data().evitar.size() <= 400
+        && (data().startedAt == null || data().startedAt is timestamp);
+    }
+
+    match /quickRooms/{code} {
+      // Solo por código: sin list, así no se pueden enumerar las salas.
+      allow get: if signedIn();
+      allow list: if false;
+
+      // Caduca a las 6 h (gameConfig.quickMatch.roomTtlMs); se acepta un pequeño margen de reloj.
+      allow create: if signedIn() && validCode(code) && validQuickRoom()
+        && data().hostUid == me()
+        && data().status == 'lobby' && data().round == 1
+        && data().evitar.size() == 0
+        && data().createdAt == request.time && data().startedAt == null
+        && data().expiresAt is timestamp
+        && data().expiresAt > request.time + duration.value(355, 'm')
+        && data().expiresAt < request.time + duration.value(365, 'm');
+
+      // lobby → playing (con startedAt del servidor) → finished → lobby (revancha: ronda + 1).
+      allow update: if signedIn() && resource.data.hostUid == me() && validQuickRoom()
+        && onlyChanges(['status', 'round', 'seed', 'evitar', 'startedAt'])
+        && (
+          (resource.data.status == 'lobby' && data().status == 'playing'
+            && data().round == resource.data.round && data().startedAt == request.time)
+          || (resource.data.status == 'playing' && data().status == 'finished'
+            && onlyChanges(['status']))
+          || (resource.data.status == 'finished' && data().status == 'lobby'
+            && data().round == resource.data.round + 1 && data().startedAt == null)
+        );
+
+      allow delete: if signedIn() && resource.data.hostUid == me();
+
+      match /players/{uid} {
+        // getAfter: la sala puede crearse en la misma transacción que el jugador anfitrión.
+        function room() {
+          return getAfter(quickRoomPath(code)).data;
+        }
+
+        function validQuickPlayer(r) {
+          return data().keys().hasOnly(['apodo', 'avatar', 'esBot', 'round', 'correctas', 'falladas', 'finished', 'updatedAt'])
+            && data().keys().hasAll(['apodo', 'avatar', 'esBot', 'round', 'correctas', 'falladas', 'finished', 'updatedAt'])
+            && validText(data().apodo, 2, 40)
+            && validText(data().avatar, 1, 20)
+            && data().round == r.round
+            && data().correctas is int && data().correctas >= 0 && data().correctas <= 1000
+            && data().falladas is int && data().falladas >= 0 && data().falladas <= 1000
+            && data().finished is bool
+            && data().updatedAt == request.time;
+        }
+
+        function roomOpen(r) {
+          return r.status in ['lobby', 'playing'] && request.time < r.expiresAt;
+        }
+
+        allow read: if signedIn();
+
+        // Se entra solo en el lobby; luego cada uno sube sus contadores mientras dure la partida.
+        allow create: if signedIn() && uid == me()
+          && room().status == 'lobby' && request.time < room().expiresAt
+          && data().esBot == false && validQuickPlayer(room());
+        allow update: if signedIn() && uid == me()
+          && roomOpen(room())
+          && resource.data.esBot == false && data().esBot == false && validQuickPlayer(room());
+
+        // El anfitrión simula los bots de su sala.
+        allow create: if signedIn() && isBotUid(uid) && room().hostUid == me()
+          && room().status == 'lobby' && request.time < room().expiresAt
+          && data().esBot == true && validQuickPlayer(room());
+        allow update: if signedIn() && isBotUid(uid) && room().hostUid == me()
+          && roomOpen(room())
+          && resource.data.esBot == true && data().esBot == true && validQuickPlayer(room());
+
+        // Uno sale de la sala; el anfitrión puede sacar a cualquiera o cerrar la sala.
+        allow delete: if signedIn() && (uid == me()
+          || (exists(quickRoomPath(code)) && get(quickRoomPath(code)).data.hostUid == me()));
+      }
+    }
+
+    // Todo lo demás está cerrado.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
